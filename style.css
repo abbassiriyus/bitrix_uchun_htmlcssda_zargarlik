@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+padding: 0;
+margin: 0;
+}
+
+.reklama{
+    background: #FFF957;
+
+}
+.reklama1{
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: 100px auto 100px;
+}
+.reklama .reklama1 h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.8px;
+    text-align: right;
+    
+}
+.reklama .reklama1 button{
+    background: #242424;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.8px;
+    text-align: right;
+    color: #FFF957;
+padding: 5px 10px;
+border: none;
+height:30px;
+}

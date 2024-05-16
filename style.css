@@ -59,11 +59,11 @@ height:30px;
 }
 
 
-nav{
+.nav1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 182px;
+    height: 152px;
     justify-content: center;
     /* background-color: red; */
     gap: 20px;
@@ -75,6 +75,7 @@ nav{
     justify-content: space-around;
     max-width: 1400px;
     /* margin: auto; */
+    width: 98%;
 }
 
 .navbar1 ul{
@@ -94,7 +95,55 @@ line-height: 20px;
 text-align: center;
 
 }
+.navbar1 .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navbar1 .navbar_but{
     height: 50px;
   
+}
+.navbar1 .icons{
+    position: relative;
+}
+.navbar1 .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #242424;
+    color: white;
+    width: 18px;
+    font-size: 10px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+@media(max-width:1378px ) and (min-width:991px){
+    .navbar1 ul li{
+        font-size: 12px;
+        gap: 5px;
+    } 
+    .navbar1 .logo img{
+        height: 30px;
+    }
+  
+    .navbar1 ul{
+        display: flex;
+        gap: 10px;
+        }
+}
+@media(max-width:1015px ) and (min-width:991px){
+    .navbar1 .logo img{
+        height: 30px;
+    } 
+}
+@media(max-width:991px){
+    .nav1{
+        display: none;
+    }
 }

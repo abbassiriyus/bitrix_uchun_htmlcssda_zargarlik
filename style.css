@@ -400,6 +400,11 @@ margin-bottom: 10px;
 .main_card .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card{
+    margin: auto;
+    width: 98%;
 }
 
 .main_card  .swiper {
@@ -468,14 +473,14 @@ width: 100%;
 font-size: 24px;
 font-weight: 400;
 line-height: 29.26px;
-max-width: 80%;
+
   }
   .main_card .cards .card .del_price{
 display: flex;
 gap: 10px;
 align-items: center;
 justify-content: center;
-max-width: 80%;
+
   }
   .main_card .cards .card .del_price del{
     font-family: "Montserrat", sans-serif;
@@ -483,7 +488,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 19.5px;
 text-align: left;
-
   }
   .main_card .cards .card .del_price span{
     font-family: "Montserrat", sans-serif;
@@ -492,5 +496,21 @@ font-weight: 400;
 line-height: 19.5px;
 text-align: left;
 color: #EC5D5D;
-
+  }
+  .main_card .cards .card button{
+    width: 90%;
+    border: none;
+    margin-top: 20px;
+    height: 35px;background: #FFF957;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+color: #242424;  
+display: none;  
+  }
+  @media (max-width:991px){
+    .main_card .cards .card button{
+        display: block;
+    }
   }

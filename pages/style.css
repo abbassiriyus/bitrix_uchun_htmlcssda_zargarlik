@@ -777,6 +777,19 @@ border-bottom: 1px solid black;
 text-align: center;
 font-size: 24px;
 }
+.balloon{
+    background:black;
+    width: 98%;
+    margin: auto;
+    height: 477px;
+    margin-top: 70px;
+    border-radius: 10px;
+    background-size:100% 100%;
+    display: flex;
+ color: #257AE8;
+    margin-bottom: 30px;
+}
+
 @media (max-width:991px) {
     .accor{
         display: none;

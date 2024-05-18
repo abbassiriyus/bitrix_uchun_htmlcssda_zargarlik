@@ -125,13 +125,14 @@ text-align: center;
 font-size: 14px;
 font-weight: 700;
 line-height: 20px;
+margin: 0px !important;
 letter-spacing: 4px;
 text-align: center;
 color: #242424;
 }
 .nav1 .navbar_but .kol{
     display: flex;
-    align-items: center;
+    align-items: center !important;
     border: 1px solid #242424;
     justify-content: center;
     height: 40px;
@@ -357,7 +358,7 @@ align-items: center;}
 margin: auto;
 border: 1px solid black;
 border-radius: 10px;
-height: 26px;
+/* height: 26px; */
 padding-top: 12px;
 padding-bottom: 12px;
 display: grid;
@@ -405,12 +406,12 @@ margin-bottom: 10px;
     margin: auto;
     width: 98%;
 }
-.main_card .cards .card .card_img{
+.main_card .cards .card1 .card_img{
     position: relative;
     width: 100%;
     margin-bottom: 10px;
 }
-.main_card .cards .card .card_img .novinki{
+.main_card .cards .card1 .card_img .novinki{
 position: absolute;
 top: 0px;
 right: 20px;
@@ -420,7 +421,7 @@ z-index: 12;
 align-items: end;
 flex-direction: column;
 }
-.main_card .cards .card .card_img .novinki .one1{
+.main_card .cards .card1 .card_img .novinki .one1{
     width: 72px;
     height: 20px;
     gap: 0px;
@@ -435,7 +436,7 @@ color: white;
 text-align: center;
     
 }
-.main_card .cards .card .card_img .novinki .two2{
+.main_card .cards .card1 .card_img .novinki .two2{
     width: 55px;
     height: 20px;   
     background: #7751DA;
@@ -446,7 +447,7 @@ text-align: center;
     text-align: left;
     color: white;
 }
-.main_card .cards .card .card_img .dinmic{
+.main_card .cards .card1 .card_img .dinmic{
 width: 32px ;
 height: 32px;
 display: flex;justify-content: center;
@@ -457,7 +458,7 @@ bottom:  20px;
 left: 0px;
 z-index: 123;
 }
-.main_card .cards .card .card_img .dinmic img{
+.main_card .cards .card1 .card_img .dinmic img{
     width: 50%;
 }
   .main_card  .swiper img{
@@ -478,12 +479,12 @@ z-index: 123;
     height: 100%;
     object-fit: cover;
   }
-  .main_card .cards .card .bxs-star{
+  .main_card .cards .card1 .bxs-star{
     color: #D4D4D4;
 margin-bottom: 3px;
   } 
   
-  .main_card .cards .card h4{
+  .main_card .cards .card1 h4{
     font-family: "Montserrat", sans-serif;
 font-size: 14px;
 font-weight: 400;
@@ -492,23 +493,23 @@ text-align: left;
 color: #363636;
 
   }
-  .main_card .cards .card .mySwiper{
+  .main_card .cards .card1 .mySwiper{
     width: 300px;
   }
-  .main_card .cards .card .dostup{
+  .main_card .cards .card1 .dostup{
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .main_card .cards .card .circle{
+  .main_card .cards .card1 .circle{
     background: #5FCC77;
 width: 11px;
 height: 11px;
 border-radius: 50%;
   }
-  .main_card .cards .card .dostup h3{
+  .main_card .cards .card1 .dostup h3{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -517,10 +518,10 @@ border-radius: 50%;
 color: #5FCC77;    
 
   }
-  .main_card .cards .card img{
+  .main_card .cards .card1 img{
 width: 100%;
   }
-  .main_card .cards .card .price{
+  .main_card .cards .card1 .price{
     text-align: center;
     font-family: "Montserrat", sans-serif;
 font-size: 24px;
@@ -528,21 +529,21 @@ font-weight: 400;
 line-height: 29.26px;
 
   }
-  .main_card .cards .card .del_price{
+  .main_card .cards .card1 .del_price{
 display: flex;
 gap: 10px;
 align-items: center;
 justify-content: center;
 
   }
-  .main_card .cards .card .del_price del{
+  .main_card .cards .card1 .del_price del{
     font-family: "Montserrat", sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.5px;
 text-align: left;
   }
-  .main_card .cards .card .del_price span{
+  .main_card .cards .card1 .del_price span{
     font-family: "Montserrat", sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -550,7 +551,7 @@ line-height: 19.5px;
 text-align: left;
 color: #EC5D5D;
   }
-  .main_card .cards .card button{
+  .main_card .cards .card1 button{
     width: 90%;
     border: none;
     margin-top: 20px;
@@ -563,7 +564,7 @@ color: #242424;
 display: none;  
   }
   @media (max-width:991px){
-    .main_card .cards .card button{
+    .main_card .cards .card1 button{
         display: block;
     }
   }
@@ -574,3 +575,138 @@ display: none;
     background: #242424 !important;
 
   }
+
+
+
+  .footer-1{
+    width: 98%;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .footer-1 h1{
+    font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 20.7px;
+letter-spacing: 0.5px;
+text-align: center;
+margin-bottom: 30px;
+margin-top: 30px;
+  }
+  .footer-1 .buttons{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  }
+  .footer-1 .buttons button{
+    background: #F2F2F2;
+border: none;
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 8px;
+margin-right: 5px;
+  }
+  
+  .footer-1 .cards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer-1 .cards2 .card2{
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+  .footer-1 .cards2 .card2 img{
+    width: 100%;
+  }
+  .footer-1 .cards2 .card2 .card2_text{
+    display: flex;flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-1 .cards2 .card2 .card2_text p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+color: #363636;    
+  }
+  .footer-1 .cards2 .card2 .card2_text h3{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+color: #242424;    
+  }
+  .footer-1 .cards2 .card2 .card2_text del{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    color: #DE6060;
+}
+.footer-1 .section1{
+    width: 100%;
+}
+.footer-1 h3{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.5px;
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer-1 .accordion{
+    max-width: 900px;
+    margin: auto;
+}
+.footer-1 .accordion-button {
+    padding: 0px !important;
+    padding: 0px 14px !important;
+    outline: none !important;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;  
+}
+
+@media (max-width:1200px) {
+    .footer-1 .cards2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+}
+@media (max-width:991px) {
+  .section1{
+    display: none;
+  }
+  .footer-1 h3{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+
+  }
+}
+@media (max-width:900px) {
+    .footer-1 .cards2{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+      }
+}
+@media (max-width:590px) {
+    .footer-1 .cards2{
+        display: grid;
+        grid-template-columns: 1fr ;
+      }
+}
+

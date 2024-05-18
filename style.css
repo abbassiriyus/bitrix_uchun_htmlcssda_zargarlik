@@ -654,7 +654,7 @@ color: #242424;
 .footer-1 .section1{
     width: 100%;
 }
-.footer-1 h3{
+.footer-1 .h31{
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
@@ -688,7 +688,7 @@ color: #242424;
   .section1{
     display: none;
   }
-  .footer-1 h3{
+  .footer-1 .h31{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 700;

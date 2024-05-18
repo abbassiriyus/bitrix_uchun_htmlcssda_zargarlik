@@ -731,7 +731,7 @@ text-align: center;
         grid-template-columns: 1fr ;
       }
 }
-@media(max-width:400px){
+@media(max-width:460px){
     .footer-1 .cards2 .card2{
         display: grid;
         grid-template-columns: 100px auto;

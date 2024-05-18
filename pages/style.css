@@ -118,6 +118,14 @@
     color: #257AE8;
     
 }
+.ukr h4{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+margin-bottom: 0px !important; 
+}
 .ukr:hover{
     .bx-x{
         display: block;
@@ -534,6 +542,12 @@
 }
 .popular h3{
     margin-left: 10px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+margin-bottom: 0px;
 }
 .location1{
     background-color: #F2F2F2;

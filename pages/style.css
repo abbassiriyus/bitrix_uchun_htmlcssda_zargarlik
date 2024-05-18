@@ -556,129 +556,6 @@
 }
 
 
-.main_card{
-    max-width: 1200px;
-    min-height: 800px;
-}
-.main_card .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-}
-.card{
-    margin: auto;
-    width: 98%;
-}
-
-.main_card  .swiper {
-    /* width: 100%; */
-    /* height: 100%; */
-    background-color: green;
-  }
-  .main_card  .swiper img{
-    width: 100%;
-  }
-  .main_card  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main_card  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .main_card .cards .card .bxs-star{
-    color: #D4D4D4;
-
-  } 
-  .main_card .cards .card h4{
-    font-family: "Montserrat", sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 17.07px;
-text-align: left;
-color: #363636;
-
-  }
-
-  .main_card .cards .card .dostup{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .main_card .cards .card .circle{
-    background: #5FCC77;
-width: 11px;
-height: 11px;
-border-radius: 50%;
-  }
-  .main_card .cards .card .dostup h3{
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17.07px;
-    text-align: left;
-color: #5FCC77;    
-
-  }
-  .main_card .cards .card img{
-width: 100%;
-  }
-  .main_card .cards .card .price{
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-font-size: 24px;
-font-weight: 400;
-line-height: 29.26px;
-
-  }
-  .main_card .cards .card .del_price{
-display: flex;
-gap: 10px;
-color: grey;
-align-items: center;
-justify-content: center;
-
-  }
-  .main_card .cards .card .del_price del{
-    font-family: "Montserrat", sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.5px;
-text-align: left;
-  }
-  .main_card .cards .card .del_price span{
-    font-family: "Montserrat", sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.5px;
-text-align: left;
-color: #EC5D5D;
-  }
-  .main_card .cards .card button{
-    width: 90%;
-    border: none;
-    margin-top: 20px;
-    height: 35px;background: #FFF957;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.63px;
-color: #242424;  
-display: none;  
-  }
-  @media (max-width:991px){
-    .main_card .cards .card button{
-        display: block;
-    }
-  }
-
 .loc2{
     background-color: #F2F2F2;
     width: 100%;
@@ -1304,3 +1181,187 @@ border-bottom: 1px solid white;
         margin: auto;
     }
 }
+.swiper-pagination-bullet-active{
+    border-radius: 0px !important;
+    transform: rotate(45deg) !important;
+    background: #242424 !important;
+
+  }
+
+
+
+  
+.main_card{
+    max-width: 1200px;
+}
+.main_card .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card{
+    margin: auto;
+    width: 98%;
+}
+.main_card .cards .card .card_img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main_card .cards .card .card_img .novinki{
+position: absolute;
+top: 0px;
+right: 20px;
+display: flex;
+justify-content: end;
+z-index: 12;
+align-items: end;
+flex-direction: column;
+}
+.main_card .cards .card .card_img .novinki .one1{
+    width: 72px;
+    height: 20px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;   
+    background: #62C752;
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    /* display: flex; */
+color: white;
+text-align: center;
+    
+}
+.main_card .cards .card .card_img .novinki .two2{
+    width: 55px;
+    height: 20px;   
+    background: #7751DA;
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: white;
+}
+.main_card .cards .card .card_img .dinmic{
+width: 32px ;
+height: 32px;
+display: flex;justify-content: center;
+align-items: center;
+border: 1px solid #D4D4D4;
+position: absolute;
+bottom:  20px;
+left: 0px;
+z-index: 123;
+}
+.main_card .cards .card .card_img .dinmic img{
+    width: 50%;
+}
+  .main_card  .swiper img{
+    width: 100%;
+  }
+  .main_card  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_card  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main_card .cards .card .bxs-star{
+    color: #D4D4D4;
+margin-bottom: 3px;
+  } 
+  
+  .main_card .cards .card h4{
+    font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+color: #363636;
+
+  }
+  .main_card .cards .card .mySwiper{
+    width: 300px;
+  }
+  .main_card .cards .card .dostup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .main_card .cards .card .circle{
+    background: #5FCC77;
+width: 11px;
+height: 11px;
+border-radius: 50%;
+  }
+  .main_card .cards .card .dostup h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+color: #5FCC77;    
+
+  }
+  .main_card .cards .card img{
+width: 100%;
+  }
+  .main_card .cards .card .price{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.26px;
+
+  }
+  .main_card .cards .card .del_price{
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+
+  }
+  .main_card .cards .card .del_price del{
+    font-family: "Montserrat", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+  }
+  .main_card .cards .card .del_price span{
+    font-family: "Montserrat", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #EC5D5D;
+  }
+  .main_card .cards .card button{
+    width: 90%;
+    border: none;
+    margin-top: 20px;
+    height: 35px;background: #FFF957;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+color: #242424;  
+display: none;  
+  }
+  @media (max-width:991px){
+    .main_card .cards .card button{
+        display: block;
+    }
+  }

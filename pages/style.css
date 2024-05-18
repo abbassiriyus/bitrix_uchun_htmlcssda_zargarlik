@@ -712,475 +712,6 @@ border-bottom: 1px solid white;
     align-items: center;
     gap: 10px;
 }
-@media (max-width:1230px){
-    .balloon{
-        position: relative;
-    }
-    .balloon img{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        width: 40%;
-    }
-    .text_bal{
-        width: 100%;
-        margin-left: 6%;
-        margin-top: 4%;
- 
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .balloon{
-        height: 370px;
-
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-    .text_bal h1{
-        font-size: 48px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 29px;
-    }
-}
-@media (max-width:1130px) {
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-    .text_bal h1{
-        font-size: 40px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 29px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 17px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-}
-/* @media (max-width:1130px){
-  
-} */
-@media (max-width:1100px){
-    .text_bal h1{
-        font-size: 40px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 19px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-    .balloon img{
-        width: 50%;
-    } 
-}
-@media (max-width:991px) {
-    .accor{
-        display: none;
-    }
-    /* .text_bal{
-        width: 100%;
-        margin-left: 10%;
-        margin-top: 10%;
-        } */
-        .text_bal h1{
-            font-size: 48px;
-            font-weight: 600 !important; 
-            line-height: 55.2px;
-            text-align: left;
-            margin-bottom: 39px;
-        }
-        .text_bal p{
-            font-family: Century Gothic;
-        font-size: 20px;
-        font-weight: 400;
-        margin-bottom: 40px;
-        line-height: 30px;
-        text-align: left;
-        
-        }
-        .balloon img{
-            width: 40%;
-        } 
-        .text_bal span{
-            font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 27.6px;
-        text-align: left;
-        border-bottom: 1px solid white;
-        }
-    .hand{
-        background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
-        width: 98%;
-        margin: auto;
-        height: 300px;
-        margin-top: 70px;
-        border-radius: 10px;
-        background-size:100% 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .accorin{
-        display: none;
-    }
-    .body_ichi{
-        display: grid;
-        max-width: 1400px;
-        width: 98%;
-        margin: auto;
-        /* background-color: black; */
-        grid-template-columns:  auto;
-        gap: 30px;
-    }
-    .filter{
-        /* width: 98%; */
-        width: 98% !important;
-        margin: auto;
-        max-width: 1000px;
-    }
-    .filt2{
-        display: none;
-    }
-    .loc2{
-        display: flex ;
-    }
-    .filt3{
-        display: none;
-    }
-    .frame{
-        display: flex;
-    }
-    .almaz{
-        display: block !important;
-        /* justify-content: space-between; */
-        width: 98%;
-        align-items: start !important;
-        gap: 10px;
-        margin: auto;
-        margin-bottom: 20px;
-        max-width: 1400px;
-    }
-    .page{
-        display: block;
-    }
-    .page_road{
-        display: flex;
-    }
-}
-@media (max-width:800px){
-    .main_card .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 10px;
-    }
-    .balloon{
-        height: 290px;
-    }
-    .text_bal{
-        width: 100%;
-        margin-left: 5%;
-        margin-top: 2%;
-        }
-    .text_bal h1{
-        font-size: 30px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 9px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-   
-    .balloon img{
-        width: 35%;
-    }
-}
-@media (max-width:684px) {
-    .balloon img{
-        width: 40%;
-        position: absolute;
-        bottom: 30px;
-    }
-    .balloon{
-        height: 300px;
-    }
-    .balloon{
-        display: grid;
-        grid-template-columns: 2.5fr 1fr;
-    }
-}
-@media (max-width:600px){
-    .main_card .cards{
-        display: grid;
-        grid-template-columns:   1fr 1fr ;
-        gap: 10px;
-    }
-    .hand{
-        background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
-        width: 98%;
-        margin: auto;
-        height: 148px;
-        margin-top: 70px;
-        border-radius: 10px;
-        background-size:100% 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .link h1{
-        font-size: 18.75px;
-    }
-    .href span{
-        font-size: 14px;
-    }
-    .href{
-        display: flex;
-        justify-content: center;
-    margin-top: 10px;
-    align-items: center;
-    gap: 4px;
-    }
-    .bxs-chevron-right{
-        font-size: 15px !important;
-    }
-    .text_bal h1{
-        font-size: 24px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 9px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-   
-    .balloon img{
-        width: 40%;
-    }
-    .balloon{
-        height: 280px;
-    }
-
-}
-@media (max-width:500px) {
-    .text_bal h1{
-        font-size: 18px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 0px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 0px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-    .balloon{
-        height: 260px;
-    }
-}
-@media (max-width:460px){
-    .main_card .cards .card .price{
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 29.26px;
-    
-      }
-      .balloon{
-        /* height: 300px; */
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-      .balloon img{
-        display: none;
-      }
-      .text_bal h1{
-        font-size: 20px;
-        font-weight: 600 !important; 
-        line-height: 55.2px;
-        text-align: left;
-        margin-bottom: 0px;
-    }
-    .text_bal p{
-        font-family: Century Gothic;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 0px;
-    line-height: 30px;
-    text-align: left;
-    
-    }
-    .text_bal span{
-        font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 27.6px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    }
-}
-@media (max-width:400px) {
-    .page span{
-        font-size: 13px;
-    }
-    .page h3{
-        font-size: 15px;
-    }
-    .frame h2{
-        text-align: center;
-        color: white;
-       font-size: 17px;
-    }
-    .balloon{
-        width: 100%;
-        border: 0px;
-    }
-    .frame{
-        height: 80px;
-    }
-    .pod{
-        font-size: 12px !important; 
-    }
-     
-}
-@media (max-width:380px){
-    .page_road span{
-        font-size: 13px;
-    }
-}
-.inpw{
-    width: 100%;
-    height: 50px;
-    background-color: #F2F2F2;
-    margin-top: 70px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #257AE8;
-    margin-bottom: 30px;
-    min-width: 210px;
-}
-.inpw span{
-    font-weight: 600;
-}
-.page_12{
-    display: flex;
-    width: 30%;
-    max-width: 400px;
-    margin: auto;
-}
-.num{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-}
-.num1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-}
-.num:hover{
-    border-bottom: 2px solid #257AE8;
-}
-@media (max-width:700px) {
-    .page_12{
-        display: flex;
-        width: 70%;
-        max-width: 400px;
-        margin: auto;
-    }
-}
 .swiper-pagination-bullet-active{
     border-radius: 0px !important;
     transform: rotate(45deg) !important;
@@ -1196,12 +727,13 @@ border-bottom: 1px solid white;
 }
 .main_card .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 280px 280px 280px 280px;
+    /* gap: 10px; */
 }
 .card{
-    margin: auto;
-    width: 98%;
+    /* margin: auto; */
+    width: 80%;
+    margin-bottom: 40px;
 }
 .main_card .cards .card .card_img{
     position: relative;
@@ -1290,9 +822,9 @@ text-align: left;
 color: #363636;
 
   }
-  .main_card .cards .card .mySwiper{
-    width: 300px;
-  }
+  /* .main_card .cards .card .mySwiper{
+    min-width: 300px;
+  } */
   .main_card .cards .card .dostup{
     display: flex;
     align-items: center;
@@ -1316,7 +848,7 @@ color: #5FCC77;
 
   }
   .main_card .cards .card img{
-width: 100%;
+width: 80%;
   }
   .main_card .cards .card .price{
     text-align: center;
@@ -1360,8 +892,571 @@ color: #EC5D5D;
 color: #242424;  
 display: none;  
   }
-  @media (max-width:991px){
-    .main_card .cards .card button{
+@media (max-width:1430px) {
+    .main_card .cards{
+        display: grid;
+        grid-template-columns:  300px 300px 300px;
+        /* gap: 10px; */
+    }
+    .card{
+        /* margin: auto; */
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:1230px){
+    .balloon{
+        position: relative;
+    }
+    .balloon img{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 40%;
+    }
+    .text_bal{
+        width: 100%;
+        margin-left: 6%;
+        margin-top: 4%;
+ 
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .balloon{
+        height: 370px;
+
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+    .text_bal h1{
+        font-size: 48px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 29px;
+    }
+}
+@media (max-width:1200px) {
+        
+          .card{
+            /* margin: auto; */
+            width: 75%;
+            margin-bottom: 40px;
+        }
+}
+@media (max-width:1170px) {
+    .main_card .cards{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        /* gap: 10px; */
+    }
+    .card{
+        /* margin: auto; */
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:1130px) {
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+    .text_bal h1{
+        font-size: 40px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 29px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+}
+@media (max-width:1100px){
+    .text_bal h1{
+        font-size: 40px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 19px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+    .balloon img{
+        width: 50%;
+    } 
+}
+@media (max-width:991px) {
+    .accor{
+        display: none;
+    }
+    .main_card .cards{
+        display: grid;
+        grid-template-columns:300px 300px 300px;
+        /* gap: 10px; */
+    }
+    .card{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    /* .text_bal{
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 10%;
+        } */
+        .text_bal h1{
+            font-size: 48px;
+            font-weight: 600 !important; 
+            line-height: 55.2px;
+            text-align: left;
+            margin-bottom: 39px;
+        }
+        .text_bal p{
+            font-family: Century Gothic;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        line-height: 30px;
+        text-align: left;
+        
+        }
+        .main_card .cards .card button{
+            display: block;
+        }
+        .balloon img{
+            width: 40%;
+        } 
+        .text_bal span{
+            font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        border-bottom: 1px solid white;
+        }
+    .hand{
+        background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
+        width: 98%;
+        margin: auto;
+        height: 300px;
+        margin-top: 70px;
+        border-radius: 10px;
+        background-size:100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accorin{
+        display: none;
+    }
+    .body_ichi{
+        display: grid;
+        max-width: 1400px;
+        width: 98%;
+        margin: auto;
+        /* background-color: black; */
+        grid-template-columns:  auto;
+        gap: 30px;
+    }
+    .filter{
+        /* width: 98%; */
+        width: 98% !important;
+        margin: auto;
+        max-width: 1000px;
+    }
+    .filt2{
+        display: none;
+    }
+    .loc2{
+        display: flex ;
+    }
+    .filt3{
+        display: none;
+    }
+    .frame{
+        display: flex;
+    }
+    .almaz{
+        display: block !important;
+        /* justify-content: space-between; */
+        width: 98%;
+        align-items: start !important;
+        gap: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 1400px;
+    }
+    .page{
         display: block;
     }
-  }
+    .page_road{
+        display: flex;
+    }
+}
+@media (max-width:910px) {
+    .main_card .cards{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        /* gap: 10px; */
+    }
+    .card{
+        margin: auto;
+        width: 98%;
+        margin-bottom: 40px;
+    }
+    .main_card{
+     margin: auto;
+        max-width: 1200px;
+    }
+}
+@media (max-width:800px){
+    /* .main_card .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 10px;
+    } */
+    .balloon{
+        height: 290px;
+    }
+    .text_bal{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 2%;
+        }
+    .text_bal h1{
+        font-size: 30px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 9px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+   
+    .balloon img{
+        width: 35%;
+    }
+}
+@media (max-width:684px) {
+    .balloon img{
+        width: 40%;
+        position: absolute;
+        bottom: 30px;
+    }
+    .balloon{
+        height: 300px;
+    }
+    .balloon{
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+    }
+}
+@media (max-width:605px) {
+    .main_card .cards{
+        display: grid;
+        grid-template-columns:250px 250px;
+        /* gap: 10px; */
+    }
+    .card{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:600px){
+    /* .main_card .cards{
+        display: grid;
+        grid-template-columns:   1fr 1fr ;
+        gap: 10px;
+    } */
+    .hand{
+        background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
+        width: 98%;
+        margin: auto;
+        height: 148px;
+        margin-top: 70px;
+        border-radius: 10px;
+        background-size:100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link h1{
+        font-size: 18.75px;
+    }
+    .href span{
+        font-size: 14px;
+    }
+    .href{
+        display: flex;
+        justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    gap: 4px;
+    }
+    .bxs-chevron-right{
+        font-size: 15px !important;
+    }
+    .text_bal h1{
+        font-size: 24px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 9px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+   
+    .balloon img{
+        width: 40%;
+    }
+    .balloon{
+        height: 280px;
+    }
+
+}
+@media (max-width:500px) {
+   
+        .main_card .cards{
+            display: grid;
+            grid-template-columns:200px 200px;
+            /* gap: 10px; */
+        }
+        .card{
+            margin: auto;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    
+    .text_bal h1{
+        font-size: 18px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+    .balloon{
+        height: 260px;
+    }
+}
+@media (max-width:460px){
+    .main_card .cards .card .price{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29.26px;
+    
+      }
+      .balloon{
+        /* height: 300px; */
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .balloon img{
+        display: none;
+      }
+      .text_bal h1{
+        font-size: 20px;
+        font-weight: 600 !important; 
+        line-height: 55.2px;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .text_bal p{
+        font-family: Century Gothic;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    line-height: 30px;
+    text-align: left;
+    
+    }
+    .text_bal span{
+        font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    }
+}
+@media (max-width:403px) {
+    
+    .main_card .cards{
+        display: grid;
+        grid-template-columns:200px ;
+        /* gap: 10px; */
+        width: 100% !important;
+    }
+    .card{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .main_card .cards .card img{
+        width: 100%;
+          }
+}
+@media (max-width:400px) {
+    .page span{
+        font-size: 13px;
+    }
+    .page h3{
+        font-size: 15px;
+    }
+    .frame h2{
+        text-align: center;
+        color: white;
+       font-size: 17px;
+    }
+    .balloon{
+        width: 100%;
+        border: 0px;
+    }
+    .frame{
+        height: 80px;
+    }
+    .pod{
+        font-size: 12px !important; 
+    }
+     
+}
+@media (max-width:380px){
+    .page_road span{
+        font-size: 13px;
+    }
+}
+.inpw{
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    margin-top: 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #257AE8;
+    margin-bottom: 30px;
+    min-width: 210px;
+}
+.inpw span{
+    font-weight: 600;
+}
+.page_12{
+    display: flex;
+    width: 30%;
+    max-width: 400px;
+    margin: auto;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.num1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.num:hover{
+    border-bottom: 2px solid #257AE8;
+}
+@media (max-width:700px) {
+    .page_12{
+        display: flex;
+        width: 70%;
+        max-width: 400px;
+        margin: auto;
+    }
+}

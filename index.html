@@ -17,7 +17,7 @@
 <body>
 
   <div class="filter_page">
-    <div class="title2"><i class='bx bx-x'></i> <h2>Фильтры</h2> <a href="">Сбросить</a> </div>
+    <div class="title2"><i style="cursor: pointer;" onclick="document.querySelector('.filter_page').style='display:none'" class='bx bx-x'></i> <h2>Фильтры</h2> <a href="">Сбросить</a> </div>
     <div class="search">
       <input type="text" placeholder="Поиск по фильтрам">
       <i class='bx bx-search'></i>
@@ -136,17 +136,70 @@
   <button>Багет</button>
 <button>Груша</button>
 <button>Квадрат</button>
+<button>Круг</button>
+<button>Ещё +10</button>
+
 </div>
 <hr>
 <div class="title2">
-  <h2>Раздел</h2>
+  <h2>Количество камней</h2>
   <a href="">Смотреть все</a>
 </div>
 <div class="razdel1">
-<button>Серьги</button>
-<button>Кольца</button>
-<button>Браслеты</button>
-<button>Подвески</button>
+<button>Без камней</button>
+<button>1 камень</button>
+<button>2 камня</button>
+<button>3 камня</button>
+<button>4 камня</button>
+<button>Ещё +4</button>
+</div>
+<hr>
+<div class="title2">
+  <h2>Сертификат</h2>
+  <a href="">Смотреть все</a>
+</div>
+<div class="razdel1">
+<button>Сертификат GIA <i class='bx bx-error-circle' ></i></button>
+
+</div>
+<hr>
+<div class="title2">
+  <h2>Проба</h2>се</a>
+</div>
+<div class="razdel1">
+<button>375</button>
+<button>585</button>
+<button>750</button>
+<button>925</button>
+</div>
+<hr>
+<div class="title2">
+  <h2>Средний вес</h2>
+  <a href="">Смотреть все</a>
+</div>
+<div class="razdel1">
+<button>до 0,5 грамм</button>
+<button>0.5 - 1 грамм</button>
+<button>1 - 2 грамма</button>
+<button>2 - 3 грамма</button>
+<button> 3 - 4 грамма</button>
+<button>Ещё +6</button>
+
+
+</div>
+<hr>
+<div class="title2">
+  <h2>Коллекция</h2>
+  <a href="">Смотреть все</a>
+</div>
+<div class="razdel1">
+<button>TrendBook SS 2024</button>
+<button>0.5 - 1 грамм</button>
+<button>1 - 2 грамма</button>
+<button>2 - 3 грамма</button>
+<button>3 - 4 грамма</button>
+<button>Ещё +6</button>
+
 </div>
 <hr>
   </div>
@@ -227,7 +280,7 @@
     </div>
     <div class="two">
       <div class="logo"><img src="./image/Group 3.png" alt="3"></div>
-      <button><img src="./image/Vector (5).png" alt=""> Фильтры</button>
+      <button  onclick="document.querySelector('.filter_page').style='display: block;'" ><img src="./image/Vector (5).png" alt=""> Фильтры</button>
     </div>
     <div class="three">
       <input placeholder="Искать на Almaz..." type="text">

@@ -748,3 +748,79 @@ text-align: center;
       }
 }
 
+.filter_page{
+    width: 100%;
+padding-bottom: 20px;
+background-color: white;
+}
+.filter_page .title2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 47px;
+}
+.filter_page .title2 h2{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 17.07px; */
+    text-align: left;
+    padding: 0px;
+margin: 0px;
+}
+.filter_page .title2  .bx-x{
+font-size: 23px;
+}
+.filter_page .title2 a{
+    text-decoration: none;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+/* line-height: 17.07px; */
+text-align: left;
+color: #2E8AE6;
+}
+.filter_page .search {
+margin-top: 6px;
+margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: auto 30px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    height: 45px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+.filter_page .search input{
+    outline: none;
+    border: none;
+    font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.12px;
+text-align: left;
+color: #757575;
+}
+.filter_page .razdel1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 10px;
+    padding-left: 20px;
+}
+.filter_page .razdel1  button{
+ 
+    height: 34px;
+
+    background: #F2F2F2;
+margin-bottom: 20px;
+text-wrap: nowrap;
+padding:0px 20px;
+border-radius: 8px;
+border: none;
+}

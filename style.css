@@ -11,7 +11,7 @@ margin: 0;
 }
 .reklama1{
     width: 90%;
-    max-width: 1400px;
+    max-width: 1360px;
     display: grid;
     margin: auto;
     align-items: center;
@@ -48,7 +48,7 @@ height:30px;
     }
     .reklama1{
         width: 90%;
-        max-width: 1400px;
+        max-width: 1360px;
         display: grid;
         grid-template-columns: auto 40px;
     }
@@ -74,7 +74,7 @@ height:30px;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 230px 1fr;
-    max-width: 1400px;
+    max-width: 1360px;
     /* margin: auto; */
     width: 98%;
 }
@@ -113,7 +113,7 @@ text-align: center;
     height: 50px;
     width: 98%;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1360px;
     grid-template-columns: 114px 1fr 2fr 1fr  70px 170px;
     align-items: center;
     gap: 20px;
@@ -191,7 +191,7 @@ text-align: center;
     .nav1  .navbar_but{
         display: grid;
         align-items: center;
-        max-width: 1400px;
+        max-width: 1360px;
         grid-template-columns: 114px 1fr 2fr 1fr  50px 140px;
         align-items: center;
         gap: 20px;
@@ -394,6 +394,65 @@ font-weight: 400;
 line-height: 17.07px;
 text-align: center;
 margin-bottom: 10px;
+}
+
+
+.pagerout{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    max-width: 1360px;
+    height: 40px;
+    margin: auto;
+    align-items: center;
+}
+.pagerout img{
+width: 24px;
+height: 24px;
+
+}
+.pagerout i{
+font-size: 24px;
+color: #808080;
+
+}
+.pagerout span{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    
+}
+
+.titlepage{
+    display: flex;
+    align-items: center ;
+    max-width: 1360px;
+    margin: auto;
+}
+.titlepage h1{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34.13px;
+    text-align: left;
+    color: black;
+}
+.titlepage p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    color: #7D7D7D;
+}
+
+@media(max-width:991px){
+    .pagerout{display: none;}
+    .titlepage{
+        display: none;
+    }
 }
 
 .main_card{
@@ -602,7 +661,7 @@ display: none;
 
   .footer-1{
     width: 98%;
-    max-width: 1400px;
+    max-width: 1360px;
     margin: auto;
   }
   .footer-1 h1{

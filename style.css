@@ -4,6 +4,17 @@
 padding: 0;
 margin: 0;
 }
+body{
+    padding-top: 150px;
+}
+.navbasrr{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1212123;
+  background-color: white;
+}
 
 .reklama{
     background: #FFF957;
@@ -81,9 +92,9 @@ padding: 0pc;
 
 .navbar1{
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 230px 1fr;
-    max-width: 1360px;
+    gap: 48px;
+    grid-template-columns: 1.2fr 230px 1fr;
+    max-width: 1400px;
     /* margin: auto; */
     width: 98%;
 }
@@ -91,7 +102,7 @@ padding: 0pc;
 .navbar1 ul{
 display: flex;
 gap: 10px;
-justify-content: space-around;
+justify-content: space-between;
 }
 .navbar1 ul li{
     font-family: "Montserrat", sans-serif;
@@ -100,12 +111,12 @@ justify-content: space-around;
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    height: 60px;
+    height: 35px;
 font-size: 14px;
 font-weight: 600;
 line-height: 20px;
 text-align: center;
-
+margin-top: 28px;
 }
 .navbar1 .logo{
     display: flex;
@@ -470,7 +481,7 @@ font-weight: 400x;
 }
 
 .main_card{
-    max-width: 1200px;
+    max-width: 1200px;margin-top: 24px;
 }
 .main_card .cards{
     display: grid;

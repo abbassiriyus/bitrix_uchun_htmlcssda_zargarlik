@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&display=swap');
 *{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -26,7 +27,7 @@
 
 .almaz{
     display: grid;
-    grid-template-columns: 270px auto;
+    grid-template-columns: 262px auto;
     /* justify-content: space-between; */
     width: 90%;
     align-items: start !important;
@@ -37,7 +38,7 @@
 }
 .input_search{
     background-color: white;
-    width: 98%;
+    width: 94%;
     /* margin: auto; */
     border-radius: 10px;
     border: 2px solid grey;
@@ -112,10 +113,14 @@ margin-bottom: 0px;
     overflow: auto;overflow: auto !important;
     /* justify-content: space-between; */
 }
+.accordion{
+    --bs-accordion-btn-icon-width:1rem !important;
+    width: 90%;
+}
 .ukr{
     /* width: 206.33px; */
     height: 40px;
-    padding: 0px 34px;
+    padding: 0px 12px;
     gap: 20px;
     border-radius: 8px;
     display: flex;
@@ -124,6 +129,7 @@ margin-bottom: 0px;
     opacity: 0px;
     border: 2px solid #257AE8;
     color: #257AE8;
+    cursor: pointer;
     
 }
 .filt2 h4{
@@ -134,26 +140,28 @@ line-height: 20px;
 text-align: center;
 margin-bottom: 0px !important; 
 }
-.ukr:hover{
-    .bx-x{
-        display: block;
-    }
-}
-.bx-x{
+.ukr .bx-x{
     font-size: 20px;
-    display: none;
+    display: none !important;
+    transition: 2s !important;
+    
 }
+
+.ukr:hover .bx-x{
+        display: block !important;
+    }
+
 
 .filt2{
     gap: 20px;
     display: flex;
-    margin-top: 5px;
+    margin-top: 6px;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 0px;
 
 }
 .razdel{
-  margin-top: -130px;
+  margin-top: -107px;
     /* min-height: 300px; */
 }
 .razdel1{
@@ -186,7 +194,8 @@ margin-bottom: 0px !important;
     
 }
 .accor .accordion-collapse{
-    padding-left: 10px;
+    padding-left: 0px;
+    width: 98%;
 }
 
 .raz:hover{
@@ -210,6 +219,7 @@ margin-bottom: 0px !important;
     /* margin-bottom: 20px; */
     border-radius: 10px;
     transition: 1s;
+    margin-top: 10px;
     /* display: none; */
 }
 .radl h3{
@@ -232,20 +242,25 @@ margin-bottom: 0px !important;
     justify-content: space-between;
     width: 85%;
     margin: auto;
-    height: 50px;
+    height: 40px;
     align-items: center;
     /* margin-bottom: 20px; */
     border-radius: 10px;
     transition: 1s;
+/* background-color: #257AE8; */
+padding-left: 7px;
 }
 .clock h3{
-    margin-left: 10px;
-    font-size: 16px;
     font-weight: 500;
+    font-family: Montserrat;
+    font-size: 14px !important;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+
 }
 .clock:hover{
     background-color: #E7F1FD;
-
 }
 .range_container {
     display: flex;
@@ -557,43 +572,49 @@ text-align: left;
 }
 .filt3{
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 230px 244px;
     gap: 10px;
-    align-items: center;
+    align-items: start;
     width: 50%;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .popular{
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 17px;
     justify-content: space-between;
     border-radius: 8px;
     outline: none;
     border: 1px solid #8a8383;
-    height: 48px;
-
-}
-.popular h3{
-    margin-left: 10px;
+    height: 43px; 
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
 line-height: 21px;
 text-align: left;
 margin-bottom: 0px;
+
 }
+
 .location1{
     background-color: #F2F2F2;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #257AE8;
-    margin-top: 30px;
+    margin-top: 16px;
+}
+.location1 span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: center;
+
 }
 .local1{
     display: flex;
@@ -1471,6 +1492,12 @@ border-bottom: 1px solid white;
 }
 .accordion-button{
     background-color: rgba(255, 255, 255, 0) !important; 
+    font-family: Montserrat;
+font-size: 14px !important; 
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+
 }
 .foot2 {
     padding: 0 !important;
@@ -1593,5 +1620,54 @@ margin: 0px !important;
     font-weight: 600;
 }
 
+.hand2{
+    height: 477px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.hand2 .as{
+    width: 77%;
+    position: relative;
+    z-index: 2;
+}
+.hand2 .as p{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: "Nanum Gothic", sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+max-width: 705px;
+}
+.hand2 .as h2{
+    font-family: Montserrat;
+font-size: 48px;
+font-weight: 600;
+line-height: 55.2px;
+text-align: left;
 
-
+}
+.hand2 .as a{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+text-decoration: none;    
+color: white;
+}
+.hand2 img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+ 
+}

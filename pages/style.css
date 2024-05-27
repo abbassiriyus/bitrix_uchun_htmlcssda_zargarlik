@@ -1498,6 +1498,7 @@ font-size: 14px !important;
 font-weight: 500;
 line-height: 20px;
 text-align: left;
+height: 50px;
 
 }
 .foot2 {
@@ -1615,7 +1616,9 @@ margin: 0px !important;
         margin-bottom: 80px;
     }
 }
-
+.accordion{
+    width: 100%;
+}
 .accorfooter h3{
     font-size:18px;
     font-weight: 600;

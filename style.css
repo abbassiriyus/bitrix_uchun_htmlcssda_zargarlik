@@ -429,8 +429,9 @@ margin-bottom: 10px;
     max-width: 1360px;
     height: 40px;
     margin: auto;
+    /* margin: auto; */
     align-items: center;
-margin-top: 33px;
+margin-top:53px !important;
 }
 .pagerout img{
 width: 20px;
@@ -776,6 +777,7 @@ color: #242424;
 .footer-1 .accordion{
     max-width: 900px;
     margin: auto;
+
 }
 .footer-1 .accordion-button {
     padding: 0px !important;

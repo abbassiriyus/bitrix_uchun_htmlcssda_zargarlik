@@ -56,6 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top:30px;
 }
 
 .section_title {
@@ -1477,7 +1478,6 @@ header .mobile_header .second_floor .input2 input {
   flex-direction: column;
 }
 .hand_rings .hands_all .rings_item .one_ring {
-  margin-bottom: 26px;
 }
 .hand_rings .hands_all .rings_item .one_ring:last-child {
   margin-bottom: 0;
@@ -1489,7 +1489,7 @@ header .mobile_header .second_floor .input2 input {
   color: #000;
 }
 .hand_rings .hands_all .rings_item .one_ring .ring_img img {
-  width: 100%;
+  width: 60%;
 }
 .hand_rings .hands_all .rings_item .one_ring .ring_img .one_ring_text {
   position: absolute;

@@ -37,26 +37,207 @@
 <button>Ещё +32</button>
 </div>
 <hr>
-<div class="sliders_control">
+<div class="sliders_control1">
   <div class="title2">
     <h2>Цена</h2>
   </div>
-  <div class="sliders_control" >
-    <input id="fromSlider" type="range" value="10" min="0" max="100" />
-    <input id="toSlider" type="range" value="30" min="0" max="100" />
-  </div>
-  <div class="form_control" style="max-width: 270px;margin-left: 20px">
-    <div class="form_control_container">
-      <div class="form_control_container__time">от</div>
-      <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0"
-        max="100" />
+  <style>
+    .range_container {
+display: flex;
+flex-direction: column;
+width: 98%;
+margin: 10px auto;
+}
+
+.sliders_control {
+position: relative;
+min-height: 50px;
+}
+
+.range_container .form_control {
+position: relative;
+display: flex;
+justify-content: space-between;
+font-size: 24px;
+color: #635a5a;
+}
+
+.range_container input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 24px;
+height: 24px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px #257AE8;
+cursor: pointer;
+}
+.form_control_container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid grey;
+  padding-left: 10px;
+}
+.range_container input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 24px;
+height: 24px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 1px #2E8AE6;
+cursor: pointer;  
+
+}
+
+.range_container input[type=range]::-webkit-slider-thumb:hover {
+background: #f7f7f7;
+
+}
+
+.range_container input[type=range]::-webkit-slider-thumb:active {
+box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+-webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+
+}
+
+.range_container input[type="number"] {
+color: #8a8383;
+width: 50px;
+height: 30px;
+font-size: 20px;
+border: none;
+
+}
+
+.range_container input[type=number]::-webkit-inner-spin-button, 
+.range_container input[type=number]::-webkit-outer-spin-button {  
+opacity: 1;
+}
+
+.range_container input[type="range"] {
+-webkit-appearance: none; 
+appearance: none;
+height: 2px;
+width: 100%;
+position: absolute;
+background-color: #C6C6C6;
+pointer-events: none;
+}
+
+.range_container #fromSlider {
+height: 0;
+z-index: 1;
+}
+</style>
+<div class="range_container">
+    <div class="sliders_control">
+       <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+       <input id="toSlider" type="range" value="30" min="0" max="100"/>
     </div>
-    <div class="form_control_container">
-      <div class="form_control_container__time">Max</div>
-      <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0"
-        max="100" />
+    <div class="form_control">
+      <div class="form_control_container">
+          <div class="form_control_container__time">от</div>
+          <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+        </div>
+        <div class="form_control_container">
+          <div class="form_control_container__time">до</div>
+          <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0" max="100"/>
+        </div>
     </div>
-  </div>
+</div>
+<script>
+    function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+const [from, to] = getParsed(fromInput, toInput);
+fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+if (from > to) {
+    fromSlider.value = to;
+    fromInput.value = to;
+} else {
+    fromSlider.value = from;
+}
+}
+
+function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+const [from, to] = getParsed(fromInput, toInput);
+fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+setToggleAccessible(toInput);
+if (from <= to) {
+    toSlider.value = to;
+    toInput.value = to;
+} else {
+    toInput.value = from;
+}
+}
+
+function controlFromSlider(fromSlider, toSlider, fromInput) {
+const [from, to] = getParsed(fromSlider, toSlider);
+fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+if (from > to) {
+fromSlider.value = to;
+fromInput.value = to;
+} else {
+fromInput.value = from;
+}
+}
+
+function controlToSlider(fromSlider, toSlider, toInput) {
+const [from, to] = getParsed(fromSlider, toSlider);
+fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+setToggleAccessible(toSlider);
+if (from <= to) {
+toSlider.value = to;
+toInput.value = to;
+} else {
+toInput.value = from;
+toSlider.value = from;
+}
+}
+
+function getParsed(currentFrom, currentTo) {
+const from = parseInt(currentFrom.value, 10);
+const to = parseInt(currentTo.value, 10);
+return [from, to];
+}
+
+function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+const rangeDistance = to.max-to.min;
+const fromPosition = from.value - to.min;
+const toPosition = to.value - to.min;
+controlSlider.style.background = `linear-gradient(
+  to right,
+  ${sliderColor} 0%,
+  ${sliderColor} ${(fromPosition)/(rangeDistance)*100}%,
+  ${rangeColor} ${((fromPosition)/(rangeDistance))*100}%,
+  ${rangeColor} ${(toPosition)/(rangeDistance)*100}%, 
+  ${sliderColor} ${(toPosition)/(rangeDistance)*100}%, 
+  ${sliderColor} 100%)`;
+}
+
+function setToggleAccessible(currentTarget) {
+const toSlider = document.querySelector('.range_container #toSlider');
+if (Number(currentTarget.value) <= 0 ) {
+toSlider.style.zIndex = 2;
+} else {
+toSlider.style.zIndex = 0;
+}
+}
+
+const fromSlider = document.querySelector('.range_container #fromSlider');
+const toSlider = document.querySelector('.range_container #toSlider');
+const fromInput = document.querySelector('.range_container #fromInput');
+const toInput = document.querySelector('.range_container #toInput');
+fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+setToggleAccessible(toSlider);
+
+fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+
+</script>
 </div>
 <hr>
 <div class="title2">
@@ -259,8 +440,8 @@
         <h4>PREMIUM</h4>
         <img src="./image/spinel_diamond_earrings_on_transparent_background_g_1_2_1 1.svg" alt="">
       </div>
-      <h4>Акции</h4>
-      <h4>Рассрочки и кредит</h4>
+      <h4 class="aksiya">Акции</h4>
+      <h4 class="aksiya1">Рассрочки и кредит</h4>
     </div>
   </nav>
   <nav class="nav2">
@@ -667,7 +848,7 @@
           aria-controls="collapseOne121" class="raz accordion-button">
            <h3>ЦЕНА</h3> 
           </div>
-          <div id="collapseOne121" class="accordion-collapse collapse  range_container" data-bs-parent="#accordionExample" >
+          <!-- <div>
             <div class="sliders_control">
               <input id="fromSlider" type="range" value="10" min="0" max="100" />
               <input id="toSlider" type="range" value="30" min="0" max="100" />
@@ -684,9 +865,216 @@
                   max="100" />
               </div>
             </div>
+          </div> -->
+          <!-- <div class="range_container">
+            <div class="sliders_control">
+               <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+               <input id="toSlider" type="range" value="30" min="0" max="100"/>
+            </div>
+            <div class="form_control">
+              <div class="form_control_container">
+                  <div class="form_control_container__time">Min</div>
+                  <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                </div>
+                <div class="form_control_container">
+                  <div class="form_control_container__time">Max</div>
+                  <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0" max="100"/>
+                </div>
+            </div>
+        </div> -->
+        <style>
+          .range_container1 {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 10px auto;
+      }
+      
+      .sliders_control1 {
+      position: relative;
+      min-height: 50px;
+      }
+      
+      .range_container1 .form_control1 {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      color: #635a5a;
+      }
+      
+      .range_container1 input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      pointer-events: all;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #257AE8;
+      cursor: pointer;
+      }
+      .form_control_container1{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 18px;
+        border: 1px solid grey;
+        padding-left: 10px;
+      }
+      .range_container1 input[type=range]::-moz-range-thumb {
+      -webkit-appearance: none;
+      pointer-events: all;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #C6C6C6;
+      cursor: pointer;  
+      }
+      
+      .range_container1 input[type=range]::-webkit-slider-thumb:hover {
+      background: #f7f7f7;
+      }
+      
+      .range_container1 input[type=range]::-webkit-slider-thumb:active {
+      box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+      -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+      }
+      
+      .range_container1 input[type="number"] {
+      color: #8a8383;
+      width: 50px;
+      height: 30px;
+      font-size: 20px;
+      border: none;
+      }
+      
+      .range_container1 input[type=number]::-webkit-inner-spin-button, 
+      .range_container1 input[type=number]::-webkit-outer-spin-button {  
+      opacity: 1;
+      }
+      
+      .range_container1 input[type="range"] {
+      -webkit-appearance: none; 
+      appearance: none;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background-color: #C6C6C6;
+      pointer-events: none;
+      }
+      
+      .range_container1 #fromSlider1 {
+      height: 0;
+      z-index: 1;
+      }
+      </style>
+      <div  id="collapseOne121" class="accordion-collapse collapse  range_container1" data-bs-parent="#accordionExample" >
+          <div class="sliders_control1">
+             <input id="fromSlider1" type="range" value="10" min="0" max="100"/>
+             <input id="toSlider1" type="range" value="30" min="0" max="100"/>
           </div>
-
-
+          <div class="form_control1">
+            <div class="form_control_container1">
+                <div class="form_control_container__time">от</div>
+                <input class="form_control_container__time__input" type="number" id="fromInput1" value="180" min="180" max="27000"/>
+              </div>
+              <div class="form_control_container1">
+                <div class="form_control_container__time">до</div>
+                <input class="form_control_container__time__input" type="number" id="toInput1" value="300" min="180" max="27000"/>
+              </div>
+          </div>
+      </div>
+      <script>
+          function controlFromInput(fromSlider1, fromInput1, toInput1, controlSlider) {
+      const [from, to] = getParsed(fromInput1, toInput1);
+      fillSlider(fromInput1, toInput1, '#C6C6C6', '#2E8AE6', controlSlider);
+      if (from > to) {
+          fromSlider1.value = to;
+          fromInput1.value = to;
+      } else {
+          fromSlider1.value = from;
+      }
+      }
+      
+      function controlToInput(toSlider1, fromInput1, toInput1, controlSlider) {
+      const [from, to] = getParsed(fromInput1, toInput1);
+      fillSlider(fromInput1, toInput1, '#C6C6C6', '#2E8AE6', controlSlider);
+      setToggleAccessible(toInput1);
+      if (from <= to) {
+          toSlider1.value = to;
+          toInput1.value = to;
+      } else {
+          toInput1.value = from;
+      }
+      }
+      
+      function controlFromSlider1(fromSlider1, toSlider1, fromInput1) {
+      const [from, to] = getParsed(fromSlider1, toSlider1);
+      fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider1);
+      if (from > to) {
+      fromSlider1.value = to;
+      fromInput1.value = to;
+      } else {
+      fromInput1.value = from;
+      }
+      }
+      
+      function controlToSlider1(fromSlider1, toSlider1, toInput1) {
+      const [from, to] = getParsed(fromSlider1, toSlider1);
+      fillSlider1(fromSlider1, toSlider1, '#C6C6C6', '#2E8AE6', toSlider1);
+      setToggleAccessible1(toSlider1);
+      if (from <= to) {
+      toSlider1.value = to;
+      toInput1.value = to;
+      } else {
+      toInput1.value = from;
+      toSlider1.value = from;
+      }
+      }
+      
+      function getParsed(currentFrom, currentTo) {
+      const from = parseInt(currentFrom.value, 10);
+      const to = parseInt(currentTo.value, 10);
+      return [from, to];
+      }
+      
+      function fillSlider1(from, to, sliderColor, rangeColor, controlSlider) {
+      const rangeDistance = to.max-to.min;
+      const fromPosition = from.value - to.min;
+      const toPosition = to.value - to.min;
+      controlSlider.style.background = `linear-gradient(
+        to right,
+        ${sliderColor} 0%,
+        ${sliderColor} ${(fromPosition)/(rangeDistance)*27000}%,
+        ${rangeColor} ${((fromPosition)/(rangeDistance))*27000}%,
+        ${rangeColor} ${(toPosition)/(rangeDistance)*27000}%, 
+        ${sliderColor} ${(toPosition)/(rangeDistance)*27000}%, 
+        ${sliderColor} 100%)`;
+      }
+      
+      function setToggleAccessible1(currentTarget) {
+      const toSlider1 = document.querySelector('.range_container1 #toSlider1');
+      if (Number(currentTarget.value) <= 0 ) {
+      toSlider1.style.zIndex = 2;
+      } else {
+      toSlider1.style.zIndex = 0;
+      }
+      }
+      
+      const fromSlider1 = document.querySelector('.range_container1 #fromSlider1');
+      const toSlider1 = document.querySelector('.range_container1 #toSlider1');
+      const fromInput1 = document.querySelector('.range_container1 #fromInput1');
+      const toInput1 = document.querySelector('.range_container1  #toInput1');
+      fillSlider(fromSlider1, toSlider1, '#C6C6C6', '#2E8AE6', toSlider1);
+      setToggleAccessible(toSlider1);
+      
+      fromSlider1.oninput = () => controlFromSlider(fromSlider1, toSlider1, fromInput1);
+      toSlider1.oninput = () => controlToSlider(fromSlider1, toSlider1, toInput1);
+      fromInput1.oninput = () => controlFromInput(fromSlider1, fromInput1, toInput1, toSlider1);
+      toInput1.oninput = () => controlToInput(toSlider1, fromInput1, toInput1, toSlider1);
+      
+      </script>
         </div>
         <div class="razdel20 accordion-item">
           <div data-bs-toggle="collapse" data-bs-target="#collapseOne122" aria-expanded="true"
@@ -2180,14 +2568,25 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+<script src="main.js"></script>
   <!-- Initialize Swiper -->
   <script >
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
-      },
+      }, loop: true,
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false
+      // }
     });
+       swiper.autoplay.stop();
+      // Sichqoncha ustiga borganda autoplay ni yoqish
+      const swiperEl = document.querySelector('.mySwiper');
+    swiperEl.addEventListener('mouseover', () => {
+      swiper.autoplay.start();
+    });
+ 
   </script>
 </body>
 

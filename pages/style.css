@@ -563,12 +563,12 @@ text-align: center;
 }
 
 .page{
-    gap: 10px;
+    gap: 16px;
     align-items: center;
   display: none;
 }
 .page h3{
-    font-weight: 500 !important;
+    font-weight: 800 !important;
     font-family: "Montserrat", sans-serif;
 }
 .page span{
@@ -578,10 +578,11 @@ text-align: center;
 .frame{
     width: 98%;
     margin: auto;
-    height: 100px;
+    height: 90px;
     border-radius: 20px;
     margin-top: 20px;
-    background-color: #7751DA;
+    background: linear-gradient(88.68deg, #3B46B0 0%, #6771CE 100%);
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -589,12 +590,22 @@ text-align: center;
     overflow: hidden;
     display: none;
 }
+.liniy{
+    height: 1px;
+    width: 98%;
+    margin-bottom: 30px !important;
+    margin: auto;
+    background-color: grey;
+    opacity: .3;
+}
 .img21{
     position: absolute;
     bottom: 0px;
+    width: 18%;
     left: 0px;
 }
 .img12{
+    width: 15%;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -626,7 +637,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .link h1{
     font-size: 48px;
@@ -1069,12 +1080,21 @@ border-bottom: 1px solid white;
         margin-bottom: 40px;
     }
 }
+.notwo{
+    display: none;
+}
 @media (max-width:600px){
     /* .main_card .cards{
         display: grid;
         grid-template-columns:   1fr 1fr ;
         gap: 10px;
     } */
+    .noone{
+        display: none;
+    }
+    .notwo{
+        display: block;
+    }
     .hand{
         background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
         width: 98%;
@@ -1089,7 +1109,7 @@ border-bottom: 1px solid white;
         align-items: center;
     }
     .link h1{
-        font-size: 18.75px;
+        font-size: 25.75px;
     }
     .href span{
         font-size: 14px;
@@ -1556,7 +1576,7 @@ margin: 0px !important;
     position: relative;
     overflow: hidden;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     border-radius: 8px;
 }
 

@@ -1159,12 +1159,12 @@ border-bottom: 1px solid white;
         background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
         width: 98%;
         margin: auto;
-        height: 148px;
+        height: 158px;
         margin-top: 20px;
         border-radius: 10px;
         background-size:100% 100%;
         display: flex;
-        
+        margin-bottom: 20px;
         justify-content: center;
         align-items: center;
     }

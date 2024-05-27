@@ -13,7 +13,7 @@ body{
     padding-bottom: 10px;
     left: 0px;
     width: 100%;
-    z-index: 1212123;
+    z-index: 9999;
   background-color: white;
 }
 
@@ -429,19 +429,24 @@ position: relative;
 .routerclick{
     width: 100%;
     min-height:300px;
+    padding-bottom: 20px;
     background-color: white;
-    position: fixed;
-    bottom: 0;
-    /* left: 0; */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+   
+}
+.blackk{
+    display: flex;
+    justify-content: end;
+    align-items: end;    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.151);
+    height: 100vh; 
     display: none;
 }
-/* .blackk{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.082);
-    height: 100vh;
-} */
 .routic{
     width: 95%;
     margin: auto;

@@ -408,6 +408,7 @@ cursor: pointer;
 .nav2 .router{
     margin-left: 3%;
     margin-top: 10px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -415,6 +416,8 @@ font-size: 14px;
 font-weight: 400;
 line-height: 17.07px;
 text-align: center;
+height: 40px;
+width: 40%;
 margin-bottom: 10px;
 }
 

@@ -17,7 +17,7 @@
 <body>
 
   <div class="filter_page">
-    <div class="title2"><i style="cursor: pointer;" onclick="document.querySelector('.filter_page').style='display:none'" class='bx bx-x'></i> <h2>Фильтры</h2> <a href="">Сбросить</a> </div>
+    <div class="title2"><i style="cursor: pointer;" onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'" class='bx bx-x'></i> <h2>Фильтры</h2> <a href="">Сбросить</a> </div>
     <div class="search">
       <input type="text" placeholder="Поиск по фильтрам">
       <i class='bx bx-search'></i>
@@ -282,7 +282,7 @@
     </div>
     <div class="two">
       <div class="logo"><img src="./image/Group 3.png" alt="3"></div>
-      <button  onclick="document.querySelector('.filter_page').style='display: block;'" ><img src="./image/Vector (5).png" alt=""> Фильтры</button>
+      <button  onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'" ><img src="./image/Vector (5).png" alt=""> Фильтры</button>
     </div>
     <div class="three">
       <input placeholder="Искать на Almaz..." type="text">

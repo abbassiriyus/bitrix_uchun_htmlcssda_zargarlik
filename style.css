@@ -429,13 +429,19 @@ position: relative;
 .routerclick{
     width: 100%;
     min-height:300px;
-    background-color: red;
+    background-color: white;
     position: fixed;
     bottom: 0;
     /* left: 0; */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    display: none;
 }
+/* .blackk{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.082);
+    height: 100vh;
+} */
 .routic{
     width: 95%;
     margin: auto;
@@ -474,7 +480,10 @@ height: 20px;
     justify-content: space-around;
 }
 .twobtn button{
-    padding: 5px 30px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FFF957;
 }
 .pagerout i{
 font-size: 24px;

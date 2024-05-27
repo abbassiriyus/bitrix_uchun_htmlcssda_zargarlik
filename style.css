@@ -658,6 +658,9 @@ color: #363636;
     .main_card .cards .card1 .mySwiper{
         width: 200px;
       }
+      .main_card .cards .card1{
+        height: auto !important;
+      }
   }
   @media(max-width:415px){
     .main_card .cards .card1 .mySwiper{

@@ -445,7 +445,7 @@ position: relative;
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     background-color: rgba(0, 0, 0, 0.151);
     height: 100vh; 
     display: none;

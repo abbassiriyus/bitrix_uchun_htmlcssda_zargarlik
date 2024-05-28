@@ -2622,10 +2622,10 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
             const diff = endX - startX;
             console.log(startX,endX);
             if (diff > 50) { // minimal masofa (masalan, 50 piksel)
-                swiper.slidePrev();
+               swiper.slideNext(); 
                 startX = endX; // yangilash startX
             } else if (diff < -50) { // minimal masofa (masalan, -50 piksel)
-                swiper.slideNext();
+                swiper.slidePrev();
                 startX = endX; // yangilash startX
             }
         });

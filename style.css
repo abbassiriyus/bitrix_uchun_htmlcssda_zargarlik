@@ -416,7 +416,7 @@ cursor: pointer;
 }
 .nav2 .router{
     margin-left: 3%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 6px;
     display: flex;
     gap: 10px;
@@ -429,7 +429,7 @@ text-align: center;
 height: 40px;
 /* margin-bottom: 10px; */
 position: relative;
-margin-top: 30px;
+margin-top: 10px;
 }
 .routerclick{
     width: 100%;
@@ -512,7 +512,7 @@ font-weight: 400x;
 .titlepage{
     display: flex;
     align-items: center ;
-    /* max-width: 1360px; */
+    max-width: 1360px;
     margin: auto;
     margin-top: 30px;
     gap: 20px;
@@ -566,10 +566,10 @@ font-weight: 400x;
     }
 }
 @media (max-width:600px) {
-  .main_card .cards .card1 .swiper-slide img{
+  /* .main_card .cards .card1 .swiper-slide img{
         height: 160px;
         width: auto;
-    }
+    } */
     /* .main_card .cards .card1 .card_img img{
         width: 160px;
         height:160px ;
@@ -579,6 +579,7 @@ font-weight: 400x;
     position: relative;
     width: 100%;
     margin-bottom: 10px;
+
 }
 .main_card .cards .card1 .card_img .novinki{
 position: absolute;
@@ -671,12 +672,12 @@ color: #363636;
   .main_card .cards .card1 .mySwiper{
     width: 275px;
   }
-  @media(max-width:615px){
+  @media(max-width:638px){
     .main_card .cards .card1 .mySwiper{
         width: 250px;
       }
   }
-  @media(max-width:515px){
+  @media(max-width:585px){
     .main_card .cards .card1 .mySwiper{
         width: 200px;
       }
@@ -684,10 +685,28 @@ color: #363636;
         height: auto !important;
       }
   }
-  @media(max-width:415px){
+  @media(max-width:465px){
+    .main_card .cards .card_img{
+        min-height: 160px;
+    }
+    .main_card .cards{
+        width: 100%;
+    }
+    .main_card{
+        width: 98% !important; 
+    }
     .main_card .cards .card1 .mySwiper{
         width: 150px;
       }
+  }
+  @media(max-width:345px){
+    .main_card .cards .card1 .mySwiper{
+        width: 130px;
+      }
+      .main_card .cards .card_img{
+        min-height: auto;
+        min-height: 140px;
+    }
   }
   .main_card .cards .card1 .dostup{
     display: flex;
@@ -726,6 +745,7 @@ line-height: 29.26px;
 display: flex;
 gap: 10px;
 align-items: center;
+color: grey;
 justify-content: center;
 
   }
@@ -772,6 +792,9 @@ transition: 1s;
   @media (max-width:991px){
     .main_card .cards .card1 button{
         display: block;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px
     }
   }
 

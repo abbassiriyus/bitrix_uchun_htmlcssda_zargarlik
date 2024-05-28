@@ -382,7 +382,9 @@ align-items: center;}
 
 }
 .nav2 .two button img{
-    height: 12.33px;
+    position: relative;
+    top: 0px;
+    left: -8px;
     height: 11.72px;
 }
 
@@ -472,7 +474,7 @@ margin-top: 10px;
 .pagerout{
     display: flex;
     gap: 10px;
-    width: 90%;
+    width: 97%;
     max-width: 1360px;
     height: 40px;
     margin: auto;
@@ -516,7 +518,7 @@ font-weight: 400x;
     margin: auto;
     margin-top: 30px;
     gap: 20px;
-    width: 90%;
+    width: 97%;
 }
 .titlepage h1{
     font-family: Montserrat;
@@ -618,6 +620,45 @@ text-align: center;
     text-align: left;
     color: white;
 }
+@media (max-width:400px) {
+    .main_card .cards .card1 .card_img .novinki .one1{
+        width: 62px;
+        height: 13px;
+        gap: 0px;
+        border-radius: 2px 0px 0px 0px;   
+        background: #62C752;
+        font-family: "Jost", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0px !important;
+        line-height: 14px;
+        /* display: flex; */
+    color: white;
+    text-align: center;
+        
+    }
+    .main_card .cards .card1 .card_img .novinki .two2{
+        width: 47px;
+        height: 15px;   
+        background: #7751DA;
+        font-family: "Jost", sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 14px;
+        text-align: left;
+        color: white;
+    }
+    .main_card .cards .card1 .card_img .novinki{
+        position: absolute;
+        top: -10px;
+        right: 5px;
+        display: flex;
+        justify-content: end;
+        z-index: 12;
+        align-items: end;
+        flex-direction: column;
+        }
+}
 .main_card .cards .card1 .card_img .dinmic{
 width: 32px ;
 height: 32px;
@@ -628,6 +669,21 @@ position: absolute;
 bottom:  20px;
 left: 0px;
 z-index: 123;
+}
+@media (max-width:400px) {
+    .main_card .cards .card1 .card_img .dinmic{
+        width: 24px ;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #D4D4D4;
+        position: absolute;
+        bottom:  20px;
+        top: 112px;
+        left: 0px;
+        z-index: 123;
+        }
 }
 .main_card .cards .card1 .card_img .dinmic img{
     width: 50%;
@@ -659,7 +715,15 @@ z-index: 123;
     color: #D4D4D4;
 margin-bottom: 3px;
   } 
-  
+  @media (max-width:400px) {
+    .main_card .cards .card1 .bxs-star{
+        font-size: 10px;
+        position: relative;
+        top: -10px;
+        color: #D4D4D4;
+    margin-bottom: 3px;
+      } 
+  }
   .main_card .cards .card1 h4{
     font-family: "Montserrat", sans-serif;
 font-size: 14px;
@@ -667,7 +731,18 @@ font-weight: 400;
 line-height: 17.07px;
 text-align: left;
 color: #363636;
-
+  }
+  @media (max-width:400px) {
+    .main_card .cards .card1 h4{
+        font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: #363636;
+    position: relative;
+    top: -13px;
+      }
   }
   .main_card .cards .card1 .mySwiper{
     width: 275px;
@@ -728,7 +803,31 @@ border-radius: 50%;
     line-height: 17.07px;
     text-align: left;
 color: #5FCC77;    
-
+  }
+  @media (max-width:400px) {
+    .main_card .cards .card1 .dostup h3{
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 17.07px;
+        text-align: left;
+    color: #5FCC77;    
+    position: relative;
+    right: 10px;
+      }
+      .main_card .cards .card1 .circle{
+        background: #5FCC77;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+      }
+      .main_card .cards .card1 .dostup{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: -18px;
+        margin-bottom: 0px;
+      }
   }
   .main_card .cards .card1 img{
 width: 100%;
@@ -797,7 +896,14 @@ transition: 1s;
         margin-top: 20px
     }
   }
-
+  @media (max-width:400px){
+    .main_card .cards .card1 button{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px
+    }
+  }
   .swiper-pagination-bullet-active{
     border-radius: 0px !important;
     transform: rotate(45deg) !important;

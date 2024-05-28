@@ -33,7 +33,7 @@ body{
     display: grid;
     grid-template-columns: 262px auto;
     /* justify-content: space-between; */
-    width: 90%;
+    width: 98%;
     align-items: start !important;
     gap: 10px;
     margin: auto;
@@ -559,10 +559,10 @@ text-align: center;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
     align-items: center;
     color: #257AE8;
-    margin-top: 30px;
+    margin-top: 20px;
     display: none;
 }
 
@@ -623,11 +623,11 @@ text-align: center;
     font-weight: 700;
 }
 .page_road{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 11px;
+    margin-left: 4px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     display: none;
 }
 .hand{
@@ -994,9 +994,11 @@ border-bottom: 1px solid white;
     }
     .page{
         display: block;
+        margin-top: 24px;
     }
     .page_road{
         display: flex;
+        
     }
     .swiper-pagination{
         display: none;
@@ -1253,8 +1255,8 @@ border-bottom: 1px solid white;
     .main_card .cards{
         display: grid;
         grid-template-columns:1fr 1fr ;
-        /* gap: 10px; */
-        width: 99% !important;
+        gap: 20px;
+        width: 98% !important;
         margin: auto;
         /* margin-left: 1px; */
     }
@@ -1270,31 +1272,47 @@ border-bottom: 1px solid white;
 }
 @media (max-width:400px) {
     .page span{
-        font-size: 13px;
+        font-size: 14px;
+        margin-left: 14px;
     }
     .page h3{
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: 600 !important;
+        margin-top: 10px;
     }
     .frame h2{
         text-align: center;
         color: white;
-       font-size: 17px;
+       font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 17.07px;
+text-align: center;
+
     }
     .balloon{
         width: 100%;
         border: 0px;
     }
     .frame{
-        height: 80px;
+        /* width: 90%; */
+        height: 50px;
+        border-radius: 8px;
     }
     .pod{
         font-size: 12px !important; 
+    }
+    .img21{
+        width: 25%;
+    }
+    .img12{
+        width: 20%;
     }
      
 }
 @media (max-width:380px){
     .page_road span{
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 .inpw{

@@ -2587,41 +2587,57 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
      function initSliders() {
       var swiper1 = new Swiper('.mySwiper', {
         loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false
-        },
         pagination: {
           el: '.mySwiper .swiper-pagination',
           clickable: true
         }
       });
 
+      const swiperContainers = document.querySelectorAll('.mySwiper');
+    const swipers = [];
 
-   var sliderContainers = document.querySelectorAll('.swiper');
+    swiperContainers.forEach((container, index) => {
+        // Har bir konteyner uchun Swiper instance yaratish
+        const swiper = new Swiper(container, {
+            navigation: {
+                nextEl: container.querySelector('.swiper-button-next'),
+                prevEl: container.querySelector('.swiper-button-prev'),
+            },
+            pagination: {
+      el: container.querySelector('.swiper-pagination'),
+      clickable: true, // Foydalanuvchining sahifalarni bosish orqali o'tishiga imkon beradi
+    },
+        });
 
-    sliderContainers.forEach(function(container) {
-   
-    container.addEventListener('mouseenter', function() {
-      if (this.swiper) {
-        this.swiper.autoplay.start();
-      }
-    });
+        swipers.push(swiper);
+        let startX = 0;
+    
 
-   
-    });
-      // Stop autoplay on DOMContentLoaded for each slider
-      var sliderContainers = document.querySelectorAll('.swiper');
-      sliderContainers.forEach(function(container) {
-        container.swiper.autoplay.stop();
-      });
+        container.addEventListener('mousedown', function (e) {
+            startX = e.clientX;
+        });
+
+        container.addEventListener('mousemove', function (e) {
+            const endX = e.clientX;
+            const diff = endX - startX;
+            console.log(startX,endX);
+            if (diff > 50) { // minimal masofa (masalan, 50 piksel)
+                swiper.slidePrev();
+                startX = endX; // yangilash startX
+            } else if (diff < -50) { // minimal masofa (masalan, -50 piksel)
+                swiper.slideNext();
+                startX = endX; // yangilash startX
+            }
+        });
+
+
+      
+      })
+
     }
 
     document.addEventListener('DOMContentLoaded', initSliders);
-    // this.swiper.autoplay.stop();  
 
-    // Pause/play autoplay on hover for each slider
- 
   </script>
 </body>
 

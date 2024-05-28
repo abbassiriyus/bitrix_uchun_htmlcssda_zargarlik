@@ -2584,21 +2584,43 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
 <script src="main.js"></script>
   <!-- Initialize Swiper -->
   <script >
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      }, loop: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false
-      // }
+     function initSliders() {
+      var swiper1 = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.mySwiper .swiper-pagination',
+          clickable: true
+        }
+      });
+
+
+   var sliderContainers = document.querySelectorAll('.swiper');
+
+    sliderContainers.forEach(function(container) {
+   
+    container.addEventListener('mouseenter', function() {
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
     });
-       swiper.autoplay.stop();
-      // Sichqoncha ustiga borganda autoplay ni yoqish
-      const swiperEl = document.querySelector('.mySwiper');
-    swiperEl.addEventListener('mouseover', () => {
-      swiper.autoplay.start();
+
+   
     });
+      // Stop autoplay on DOMContentLoaded for each slider
+      var sliderContainers = document.querySelectorAll('.swiper');
+      sliderContainers.forEach(function(container) {
+        container.swiper.autoplay.stop();
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initSliders);
+    // this.swiper.autoplay.stop();  
+
+    // Pause/play autoplay on hover for each slider
  
   </script>
 </body>

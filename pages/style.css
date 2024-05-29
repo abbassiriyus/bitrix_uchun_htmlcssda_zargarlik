@@ -602,6 +602,14 @@ text-align: center;
     background-color: grey;
     opacity: .3;
 }
+.liniy2{
+    height: 1px;
+    width: 98%;
+    margin-bottom: 30px !important;
+    margin: auto;
+    background-color: grey;
+    opacity: .3;
+}
 .img21{
     position: absolute;
     bottom: 0px;
@@ -637,9 +645,10 @@ text-align: center;
     height: 477px;
     margin-top: 40px;
     border-radius: 10px;
-    background-size:100% 100%;
+    background-size:cover;
     display: flex;
     justify-content: center;
+    background-position: center;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -647,6 +656,7 @@ text-align: center;
     font-size: 48px;
     text-align: center;
     font-weight: 600 !important;
+    text-transform: uppercase;
 }
 .href{
     display: flex;
@@ -946,7 +956,8 @@ border-bottom: 1px solid white;
         height: 300px;
         margin-top: 70px;
         border-radius: 10px;
-        background-size:100% 100%;
+        background-size:cover;
+        background-position: center;
         display: flex;
         margin-bottom: 30px;
         justify-content: center;
@@ -975,6 +986,7 @@ border-bottom: 1px solid white;
     }
     .loc2{
         display: flex ;
+        margin-top: 17px;
     }
     .filt3{
         display: none;
@@ -994,7 +1006,9 @@ border-bottom: 1px solid white;
     }
     .page{
         display: block;
-        margin-top: 24px;
+        margin-top: 23px;
+        margin-left: 2%;
+
     }
     .page_road{
         display: flex;
@@ -1104,19 +1118,28 @@ border-bottom: 1px solid white;
     }
     .hand{
         background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
-        width: 98%;
+        width: 96%;
         margin: auto;
-        height: 158px;
-        margin-top: 20px;
+        height: 150px;
+        margin-top: 15px;
         border-radius: 10px;
-        background-size:100% 100%;
+        background-size:cover;
+        background-position: center;
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
         justify-content: center;
         align-items: center;
     }
+    .liniy{
+        margin-bottom: 25px !important;
+    }
     .link h1{
-        font-size: 25.75px;
+        font-family: Montserrat;
+        font-size: 18.75px;
+        font-weight: 600;
+        line-height: 21.56px;
+        text-align: center;
+        
     }
     .href span{
         font-size: 14px;
@@ -1124,7 +1147,7 @@ border-bottom: 1px solid white;
     .href{
         display: flex;
         justify-content: center;
-    margin-top: 10px;
+    margin-top: -5px;
     align-items: center;
     gap: 4px;
     }
@@ -1214,6 +1237,10 @@ border-bottom: 1px solid white;
     line-height: 29.26px;
     
       }
+      .liniy2{
+        margin-top: 15px;
+        margin-bottom: 26px !important;
+      }
       .del_price{
         font-size: 14px;
       }
@@ -1256,7 +1283,7 @@ border-bottom: 1px solid white;
         display: grid;
         grid-template-columns:1fr 1fr ;
         gap: 20px;
-        width: 98% !important;
+        width: 91% !important;
         margin: auto;
         /* margin-left: 1px; */
     }
@@ -1290,15 +1317,84 @@ line-height: 17.07px;
 text-align: center;
 
     }
+    .son1{
+        margin-top: 9px;
+    }
+    .page_road1{
+        width: 100% !important;
+        margin-top: 38px;
+        margin-left: 0px;
+    }
+    .bx-chevron-left{
+        font-size: 30px;
+    }
+    .bx-chevron-right{
+        font-size: 30px;
+    }
     .balloon{
         width: 100%;
         border: 0px;
     }
     .frame{
-        /* width: 90%; */
+        width: 92%;
         height: 50px;
         border-radius: 8px;
     }
+    .footer-1 .cards2 .card2{
+        margin-top: -17px;
+        gap: 26px;
+    }
+    .footer-1 .cards2 .card2_text p{
+        margin-top: -3px;
+    }
+    .footer-1 .cards2 .card2 .card2_text h3 {
+        position: relative;
+        top: 10px;
+    }
+    .footer-1 .cards2 .card2 img {
+        margin-left: 12px;
+    }
+    .mod{
+        margin-top: -15px !important;
+    }
+    .mod .accordion-body{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+padding: 0px;
+width: 75%;
+margin: auto; 
+    padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .footer2{
+        margin-top: 33px !important;
+    }
+    .mod .accordion-button{
+        outline: none;
+        border-bottom: none !important;
+        /* height: 53px; */
+    }
+    .footer-1 .h31 {
+        font-family: Montserrat;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-top: 22px;
+        text-align: center;
+    }
+    .footer-1 h1{
+        font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.7px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 56px;
+      }
     .pod{
         font-size: 12px !important; 
     }
@@ -1571,6 +1667,7 @@ margin: 0px !important;
         position: fixed;
         bottom: -2px;
         left: 0px;
+        height: 64px;
         z-index: 123;
         width: 100%;
         justify-content: space-around;
@@ -1684,7 +1781,8 @@ font-size: 18px;
 font-weight: 600;
 line-height: 20.7px;
 text-align: left;
-
+margin-top: 13px;
+text-transform: uppercase;
         
     }
     .hand2 .as a{
@@ -1700,6 +1798,9 @@ text-align: left;
 @media(max-width:430px){
     .hand2{
         height: 148px;
+        width: 96%;
+        margin: auto;
+        margin-top: 15px;
     }
     .hand2 img{
         position: absolute;
@@ -1709,6 +1810,9 @@ text-align: left;
     }
     .hand2 .as p{
         width: 70%;
+    }
+    .hand2 .as{
+        width: 88%;
     }
     .hand2 .as p span{
  display: none;
@@ -1745,7 +1849,20 @@ text-align: left;
     justify-content: center;
     align-items: center;
 }
-
+.application{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.alm{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    
+}
 .imgcard{
     display: none;
     /* width: 86.89px; */

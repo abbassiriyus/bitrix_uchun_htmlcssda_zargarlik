@@ -454,6 +454,7 @@ text-align: left;
     align-items: center;
     color: #257AE8;
     margin-top: 30px;
+    
 }
 .local{
     display: flex;
@@ -539,7 +540,9 @@ font-size: 14px;
 font-weight: 600;
 line-height: 20px;
 text-align: center;
-
+position: relative;
+left: -2px;
+top: 2px;
 }
 .local1{
     display: flex;
@@ -555,7 +558,7 @@ text-align: center;
     background-color: #F2F2F2;
     width: 100%;
     margin: auto;
-    height: 50px;
+    height: 40px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -986,7 +989,8 @@ border-bottom: 1px solid white;
     }
     .loc2{
         display: flex ;
-        margin-top: 17px;
+        margin-top: 22px;
+        margin-bottom: 10px;
     }
     .filt3{
         display: none;

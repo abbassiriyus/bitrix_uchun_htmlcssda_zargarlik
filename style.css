@@ -19,7 +19,7 @@ body{
 
 .reklama{
     background: #FFF957;
-height:30px;
+height:22px;
 display: flex;
 align-items: center;
 }
@@ -28,11 +28,11 @@ h2{
 }
 .reklama1{
     width: 90%;
-    max-width: 1360px;
+    max-width: 1440px;
     display: grid;
     margin: auto;
     align-items: center;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 40px 100px 1fr 100px;
 }
 .reklama .reklama1 h2{
     font-family: "Montserrat", sans-serif;
@@ -42,6 +42,8 @@ h2{
     text-align: right;
     padding: 0px !important;
     margin: 0px !important;
+    position: relative;
+    left: 7px;
     
 }
 .reklama .reklama1 button{
@@ -49,6 +51,8 @@ h2{
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 13.8px;
     text-align: right;
     color: #FFF957;
@@ -56,7 +60,7 @@ h2{
 border: none;
 height:21px;
 margin: 0px;
-padding: 0pc;
+/* padding: 0pc; */
 }
 .reklama .reklama1 i{
     font-size: 30px;
@@ -72,7 +76,7 @@ padding: 0pc;
     }
     .reklama1{
         width: 90%;
-        max-width: 1360px;
+         max-width: 1440px;
         display: grid;
         grid-template-columns: auto 40px;
     }
@@ -88,24 +92,25 @@ padding: 0pc;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 172px;
-    justify-content: center;
+    height: 155px;
+    justify-content: space-between;
     /* background-color: red; */
-    gap: 20px;
+    gap: 4px;
 }
 
 .navbar1{
     display: grid;
     gap: 48px;
     grid-template-columns: 1.2fr 230px 1fr;
-    max-width: 1400px;
+    max-width: 1440px;
     /* margin: auto; */
-    width: 98%;
+    width: 95%;
 }
 
 .navbar1 ul{
 display: flex;
 gap: 10px;
+width: 97.3%;
 justify-content: space-between;
 }
 .navbar1 ul li{
@@ -120,7 +125,7 @@ font-size: 14px;
 font-weight: 600;
 line-height: 20px;
 text-align: center;
-margin-top: 28px;
+margin-top: 19px;
 padding: 10px 4px;
 }
 .navbar1 .logo{
@@ -130,23 +135,26 @@ padding: 10px 4px;
 }
 .navbar1 .logo img{
  /* width: 90%; */
- /* margin-left: 5%; */
+ /* margin-left: 14%; */
  height: 60px;
 }
 
 .nav1  .navbar_but{
     display: grid;
     height: 50px;
-    width: 98%;
+    width: 95%;
     align-items: center;
-    max-width: 1360px;
-    grid-template-columns: 114px 220px 2.5fr 187px  70px 170px;
+     max-width: 1440px;
+    grid-template-columns: 114px 220px 2.5fr 187px  128px 170px;
     align-items: center;
     gap: 18px;
+    margin-left: 10px;
 
 }
 
-
+.navbar1 .ulsp{
+    width: 100%;
+}
 .nav1 .navbar_but .kol h4{
     font-family: "Montserrat", sans-serif;
 font-size: 14px;
@@ -222,7 +230,7 @@ text-align: center;
     .nav1  .navbar_but{
         display: grid;
         align-items: center;
-        max-width: 1360px;
+         max-width: 1440px;
         grid-template-columns: 114px 1fr 2fr 1fr  50px 140px;
         align-items: center;
         gap: 20px;
@@ -518,7 +526,7 @@ text-align: left;
     display: flex;
     gap: 10px;
     width: 97%;
-    max-width: 1360px;
+     max-width: 1440px;
     height: 40px;
     margin: auto;
     /* margin: auto; */
@@ -526,8 +534,8 @@ text-align: left;
 margin-top:53px !important;
 }
 .pagerout img{
-width: 20px;
-height: 20px;
+width: 25px;
+height: 25px;
 
 }
 .twobtn{
@@ -563,7 +571,7 @@ font-weight: 400x;
 .titlepage{
     display: flex;
     align-items: center ;
-    max-width: 1360px;
+     max-width: 1440px;
     margin: auto;
     margin-top: 30px;
     gap: 20px;
@@ -604,7 +612,7 @@ font-weight: 400x;
 }
 .card{
     margin: auto;
-    width: 98%;
+    width: 95%;
 }
 .main_card .cards .card1 {
     margin-bottom: 20px;
@@ -825,7 +833,7 @@ color: #363636;
         /* margin-top: 10px; */
     }
     .main_card{
-        width: 98% !important; 
+        width: 95% !important; 
     }
     .main_card .cards .card1 .mySwiper{
         width: 150px;
@@ -998,8 +1006,8 @@ transition: 1s;
 
 
   .footer-1{
-    width: 98%;
-    max-width: 1360px;
+    width: 95%;
+     max-width: 1440px;
     margin: auto;
   }
   .footer-1 h1{
@@ -1099,6 +1107,10 @@ color: #242424;
     margin: auto;
 
 }
+.accordion-button:not(.collapsed){
+    color: black !important;
+    }
+ 
 .footer-1 .accordion-button {
     padding: 0px !important;
     padding: 0px 14px !important;
@@ -1106,6 +1118,7 @@ color: #242424;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
     line-height: 50px;      
 }
 .body_ichi .accordion{
@@ -1114,7 +1127,7 @@ box-shadow: none !important;
 --bs-accordion-border-color:white !important;
 }
 .body_ichi .accordion-button{
-padding: 7px !important;
+padding: 6px !important;
  
     }
  
@@ -1126,6 +1139,12 @@ margin-bottom: 0px !important;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
+}
+@media (max-width:1222px) {
+    .nav1 .navbar_but {
+        display: grid;
+        grid-template-columns: 114px 200px 2.5fr 157px 78px 125px;
+    }
 }
 @media (max-width:991px) {
   .section1{
@@ -1346,12 +1365,15 @@ text-align: left;
     font-weight: 700;
 }
 .page_road1{
-    width:90%;
+    width:100%;
     max-width:300px ;
     height: 40px;
     margin: auto;
-    display: flex;
+
+    display: flex;  
+      align-items: center;
     margin-top: 20px;
+    justify-content: center;
 }
 .son1{
     /* width: 40px;
@@ -1363,9 +1385,8 @@ text-align: left;
     align-items: center;
 
 
-    width: Fill (40px)px;
-height: Hug (36px)px;
-padding: 6px 17.05px 6px 17.03px;
+    width: 40px;
+height:36px;
 gap: 0px;
 opacity: 0px;
 
@@ -1376,11 +1397,13 @@ opacity: 0px;
 }
 .son2{
     width: 40px;
-    height: 40px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+position: relative;
+top: 2px;
+font-weight: 200 !important;
 }
 @media (max-width:990px) {
     .widthto{

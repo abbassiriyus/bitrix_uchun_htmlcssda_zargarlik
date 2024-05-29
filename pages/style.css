@@ -16,8 +16,8 @@ body{
 }
 .body_ichi{
     display: grid;
-    max-width: 1360px;
-    width: 98%;
+     max-width: 1440px;
+    width: 95%;
     margin: auto;
     /* background-color: black; */
     gap: 30px;
@@ -33,12 +33,12 @@ body{
     display: grid;
     grid-template-columns: 262px auto;
     /* justify-content: space-between; */
-    width: 98%;
+    width: 95%;
     align-items: start !important;
     gap: 10px;
     margin: auto;
     margin-bottom: 20px;
-    max-width: 1360px;
+     max-width: 1440px;
 }
 .input_search{
     background-color: white;
@@ -111,11 +111,23 @@ margin-bottom: 0px;
 }
 .filt1{
     display: flex;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     gap: 10px;
     padding-bottom: 10px;
     overflow: auto;overflow: auto !important;
     /* justify-content: space-between; */
+}
+@media (max-width:990px){
+    .filt1{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+        overflow: auto;overflow: auto !important;
+        /* justify-content: space-between; */
+    } 
 }
 .accordion{
     --bs-accordion-btn-icon-width:1rem !important;
@@ -166,7 +178,7 @@ margin-bottom: 0px !important;
 
 }
 .razdel{
-  margin-top: -107px;
+  margin-top: -117px;
     /* min-height: 300px; */
 }
 .razdel1{
@@ -200,7 +212,7 @@ margin-bottom: 0px !important;
 }
 .accor .accordion-collapse{
     padding-left: 0px;
-    width: 98%;
+    width: 95%;
     transition: 1s !important;
 }
 
@@ -467,7 +479,7 @@ text-align: left;
 
 .input_search1{
     background-color: white;
-    width: 98%;
+    width: 95%;
     /* margin: auto; */
     border-radius: 10px;
     border: 2px solid grey;
@@ -583,7 +595,7 @@ top: 2px;
 
 }
 .frame{
-    width: 98%;
+    width: 95%;
     margin: auto;
     height: 90px;
     border-radius: 20px;
@@ -927,7 +939,7 @@ border-bottom: 1px solid white;
     }
     .main_card .cards{
         display: grid;
-        grid-template-columns:300px 300px 300px;
+        grid-template-columns:1fr 1fr 1fr;
         /* gap: 10px; */
     }
     .card{
@@ -989,16 +1001,16 @@ border-bottom: 1px solid white;
     }
     .body_ichi{
         display: grid;
-        max-width: 1360px;
-        width: 98%;
+         max-width: 1440px;
+        width: 95%;
         margin: auto;
         /* background-color: black; */
         grid-template-columns:  auto;
         gap: 30px;
     }
     .filter{
-        /* width: 98%; */
-        width: 98% !important;
+      
+        width: 100% !important;
         margin: auto;
         max-width: 1000px;
     }
@@ -1007,8 +1019,11 @@ border-bottom: 1px solid white;
     }
     .loc2{
         display: flex ;
-        margin-top: 22px;
-        margin-bottom: 10px;
+        
+      
+        width: 100%;
+        margin: auto;
+          margin-bottom: 10px;margin-top: 22px;
     }
     .filt3{
         display: none;
@@ -1019,12 +1034,12 @@ border-bottom: 1px solid white;
     .almaz{
         display: block !important;
         /* justify-content: space-between; */
-        width: 98%;
+        width: 95%;
         align-items: start !important;
         gap: 10px;
-        margin: auto;
-        margin-bottom: 20px;
-        max-width: 1360px;
+        /* margin: auto; */
+        margin-bottom: 20px ;
+         max-width: 1440px;
     }
     .page{
         display: block;
@@ -1034,6 +1049,8 @@ border-bottom: 1px solid white;
     }
     .page_road{
         display: flex;
+        width: 94%;
+        margin: auto;
         
     }
     .swiper-pagination{
@@ -1049,7 +1066,7 @@ border-bottom: 1px solid white;
     }
     .card{
         margin: auto;
-        width: 98%;
+        width: 95%;
         margin-bottom: 40px;
     }
     .main_card{
@@ -1140,7 +1157,7 @@ border-bottom: 1px solid white;
     }
     .hand{
         background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
-        width: 96%;
+        width: 100%;
         margin: auto;
         height: 150px;
         margin-top: 15px;
@@ -1305,7 +1322,7 @@ border-bottom: 1px solid white;
         display: grid;
         grid-template-columns:1fr 1fr ;
         gap: 20px;
-        width: 91% !important;
+        width: 100% !important;
         margin: auto;
         /* margin-left: 1px; */
     }
@@ -1328,6 +1345,8 @@ border-bottom: 1px solid white;
         font-size: 14px;
         font-weight: 600 !important;
         margin-top: 10px;
+        width: 100%;
+        margin: auto;
     }
     .frame h2{
         text-align: center;
@@ -1345,7 +1364,7 @@ text-align: center;
     .page_road1{
         width: 100% !important;
         margin-top: 38px;
-        margin-left: 0px;
+        /* margin-left: 0px; */
     }
     .son2 .bx-chevron-left{
         font-size: 30px;
@@ -1358,7 +1377,7 @@ text-align: center;
         border: 0px;
     }
     .frame{
-        width: 92%;
+        width: 95%;
         height: 50px;
         border-radius: 8px;
     }
@@ -1485,8 +1504,8 @@ margin: auto;
     padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 98%;
-    max-width: 1360px;
+    width: 95%;
+     max-width: 1440px;
     margin: auto;
 }
 .footer_1 ul{
@@ -1700,7 +1719,7 @@ margin: 0px !important;
     .footer2{
         display: block;
         margin: auto;
-        width: 98%;
+        width: 95%;
         margin-top: 40px;
         margin-bottom: 80px;
     }
@@ -1820,7 +1839,7 @@ text-align: left;
 @media(max-width:430px){
     .hand2{
         height: 148px;
-        width: 96%;
+        width: 100%;
         margin: auto;
         margin-top: 15px;
     }
@@ -1898,4 +1917,18 @@ text-align: left;
     .imgcard{
         display: block;
     }
+}
+/* .footer-1  */
+/* .footer2 */
+.footer-1 .accordion,.footer2 .accordion{
+    --bs-accordion-btn-focus-box-shadow:none !important;
+    --bs-accordion-border-width:0px !important;
+    border-radius: 0px !important;
+    --bs-accordion-border-radius:0px !important
+}
+.footer-1 .accordion-item, .footer2 .accordion-item{
+    border-bottom: 1px solid #E6E6E6 !important
+}
+.footer2 .accordion-button{
+    font-weight: 700;
 }

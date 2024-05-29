@@ -114,12 +114,13 @@ width: 50px;
 height: 30px;
 font-size: 12px;
 border: none;
-
+outline: none;
 }
 
 .range_container input[type=number]::-webkit-inner-spin-button, 
 .range_container input[type=number]::-webkit-outer-spin-button {  
 opacity: 1;
+outline: none;
 }
 
 .range_container input[type="range"] {
@@ -408,10 +409,12 @@ background:
   <div class="reklama">
     <div class="reklama1">
       <div class="pust"></div>
-      <div style="display: flex;gap: 30px;justify-content: center;align-items: center;">
+      <div class="pust"></div>
+
+      <div style="display: flex;gap:32px;justify-content: center;align-items: center;margin-left: 21px;">
         <h2>WEEKEND SALE* ЕЩЁ -25% К СКИДКЕ 60% | 100% КЕШБЭК</h2><button>ТОЛЬКО 3 ДНЯ</button>
       </div>
-      <i onclick="document.querySelector('.reklama1').style='display:none' " style="margin: auto;margin-right: 5px;font-size: 21px;"
+      <i onclick="document.querySelector('.reklama').style='display:none' " style="margin: auto;margin-right: 5px;font-size: 21px;"
         class='bx bx-x'></i>
     </div>
   </div>
@@ -912,52 +915,62 @@ background:
         </div> -->
         <style>
           .range_container1 {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin: 10px auto;
+            display: flex;
+flex-direction: column;
+width: 90%;
+margin: 10px auto;
+margin-top: 27px !important;
       }
       
       .sliders_control1 {
       position: relative;
       min-height: 50px;
+      margin-top: 30px;
+      width: 90%;
       }
       
       .range_container1 .form_control1 {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      font-size: 24px;
-      color: #635a5a;
+        position: relative;
+display: flex;
+justify-content: space-between;
+font-size: 24px;
+color: #635a5a;
+margin-bottom: 20px;
       }
       
       .range_container1 input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      pointer-events: all;
-      width: 24px;
-      height: 24px;
-      background-color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 0 2px #257AE8;
-      cursor: pointer;
+        -webkit-appearance: none;
+pointer-events: all;
+width: 20px;
+height: 20px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px #257AE8;
+cursor: pointer;
       }
       .form_control_container1{
         display: flex;
-        gap: 10px;
-        align-items: center;
-        font-size: 18px;
-        border: 1px solid grey;
-        padding-left: 10px;
+  gap: 10px;
+  width: 47%;
+  margin-top: -20px;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding-left: 10px;
+      }
+      .form_control1{
+        width: 90%;
       }
       .range_container1 input[type=range]::-moz-range-thumb {
-      -webkit-appearance: none;
-      pointer-events: all;
-      width: 24px;
-      height: 24px;
-      background-color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px #C6C6C6;
-      cursor: pointer;  
+        -webkit-appearance: none;
+pointer-events: all;
+width: 24px;
+height: 24px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 1px #2E8AE6;
+cursor: pointer;  
       }
       
       .range_container1 input[type=range]::-webkit-slider-thumb:hover {
@@ -973,7 +986,7 @@ background:
       color: #8a8383;
       width: 50px;
       height: 30px;
-      font-size: 20px;
+      font-size: 12px;
       border: none;
       }
       

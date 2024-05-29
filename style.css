@@ -448,7 +448,7 @@ margin-top: 10px;
 }
 .routerclick{
     width: 100%;
-    min-height:300px;
+    min-height:250px;
     padding-bottom: 20px;
     background-color: white;
     border-top-left-radius: 16px;
@@ -468,21 +468,51 @@ margin-top: 10px;
     display: none;
 }
 .routic{
-    width: 95%;
+    width: 92%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 .closehead{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    margin-top: 10px;
+}
+.closehead1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4px;
+    align-items: center;
+}
+.closehead span{
+    font-size: 14px;
+}
+.closehead1 h3{
+    text-transform: uppercase;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+/* margin-top: -8px; */
+
 }
 .closehead input{
-    width: 25px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
 }
-.bx-x{
-    font-size: 25px;
+
+.closehead1 .bx-x{
+    font-size: 35px;
+   
+    font-weight: 100 !important;
+    position: relative;
+    /* left: 30px; */
+}
+.closehead1 img{
+    position: relative;
+    left: 0px; 
+    margin-top: -10px;
 }
 .pagerout{
     display: flex;
@@ -505,10 +535,16 @@ height: 20px;
     justify-content: space-around;
 }
 .twobtn button{
-    padding: 5px 25px;
-    border: none;
-    border-radius: 6px;
-    background-color: #FFF957;
+    width:144px;
+height:35px;
+padding: 10px 14px 10px 14px;
+gap: 10px; 
+ border: none;
+border-radius: 6px;    
+background-color: #FFF957; 
+opacity: 0px;
+ font-size: 12px;
+ margin-top: 4px;
 }
 .pagerout i{
 font-size: 24px;
@@ -1135,7 +1171,7 @@ height: 100vh;
 left: 0px;
 overflow-y:scroll;
 }
-.filter_page .title2{
+.filter_page .title3{
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -1143,17 +1179,57 @@ overflow-y:scroll;
     align-items: center;
     min-height: 47px;
 }
-.filter_page .title2 h2{
+.filter_page .title2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    /* min-height: 47px; */
+    /* margin-top: -16px; */
+    margin-bottom: 10px;
+}
+.filter_page hr{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.filter_page .title3 h3{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
+
     /* line-height: 17.07px; */
     text-align: left;
     padding: 0px;
 margin: 0px;
+margin-left: 47px;
+margin-top:1px;
 }
-.filter_page .title2  .bx-x{
+.filter_page .title2 h2{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+
+    /* line-height: 17.07px; */
+    text-align: left;
+    padding: 0px;
+margin: 0px;
+ 
+}
+.filter_page .title3  .bx-x{
 font-size: 23px;
+margin-left: -3px;
+}
+.filter_page .title3 a{
+    text-decoration: none;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+/* line-height: 17.07px; */
+text-align: left;
+color: #2E8AE6;
 }
 .filter_page .title2 a{
     text-decoration: none;
@@ -1165,8 +1241,7 @@ text-align: left;
 color: #2E8AE6;
 }
 .filter_page .search {
-margin-top: 6px;
-margin-bottom: 6px;
+
     display: grid;
     grid-template-columns: auto 30px;
     align-items: center;
@@ -1177,6 +1252,8 @@ margin-bottom: 6px;
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
+    margin-top: 6px;
+margin-bottom: 6px;
 }
 .filter_page .search input{
     outline: none;
@@ -1192,19 +1269,43 @@ color: #757575;
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
+    margin-top: 13px;
     gap: 10px;
+    margin-bottom: 5px;
     /* padding-left: 20px; */
+}
+.filter_page .colors{
+    padding-top: 10px;
+}
+.filter_page .colors button{
+    min-width: 49px;
+height: 34px;
+
+gap: 0px;
+border-radius: 8px ;
+box-shadow: 0px 0px 4px 0px #00000040;
+}
+.mm{
+    box-shadow: none !important;
 }
 .filter_page .razdel1  button{
  
     height: 34px;
-
+display: flex;
+justify-content: center;
+align-items: center;
     background: #F2F2F2;
 margin-bottom: 20px;
 text-wrap: nowrap;
 padding:0px 20px;
 border-radius: 8px;
 border: none;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
 }
 .hovg li{
     padding-left: 5px;

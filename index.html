@@ -17,7 +17,7 @@
 <body>
 
   <div class="filter_page">
-    <div class="title2"><i style="cursor: pointer;" onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'" class='bx bx-x'></i> <h2>Фильтры</h2> <a href="">Сбросить</a> </div>
+    <div class="title3"><i style="cursor: pointer;" onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'" class='bx bx-x'></i> <h3>Фильтры</h3> <a href="">Сбросить</a> </div>
     <div class="search">
       <input type="text" placeholder="Поиск по фильтрам">
       <i class='bx bx-search'></i>
@@ -45,8 +45,9 @@
     .range_container {
 display: flex;
 flex-direction: column;
-width: 98%;
+width: 90%;
 margin: 10px auto;
+margin-top: 27px !important;
 }
 
 .sliders_control {
@@ -60,13 +61,14 @@ display: flex;
 justify-content: space-between;
 font-size: 24px;
 color: #635a5a;
+margin-bottom: 20px;
 }
 
 .range_container input[type=range]::-webkit-slider-thumb {
 -webkit-appearance: none;
 pointer-events: all;
-width: 24px;
-height: 24px;
+width: 20px;
+height: 20px;
 background-color: #fff;
 border-radius: 50%;
 box-shadow: 0 0 0 2px #257AE8;
@@ -75,9 +77,12 @@ cursor: pointer;
 .form_control_container{
   display: flex;
   gap: 10px;
+  width: 47%;
+  margin-top: -20px;
   align-items: center;
-  font-size: 18px;
+  font-size: 12px;
   border: 1px solid grey;
+  border-radius: 8px;
   padding-left: 10px;
 }
 .range_container input[type=range]::-moz-range-thumb {
@@ -107,7 +112,7 @@ box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
 color: #8a8383;
 width: 50px;
 height: 30px;
-font-size: 20px;
+font-size: 12px;
 border: none;
 
 }
@@ -301,11 +306,25 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
   <h2>Цвет вставки</h2>
   <a href="">Смотреть все</a>
 </div>
-<div class="razdel1">
-<button>Серьги</button>
-<button>Кольца</button>
-<button>Браслеты</button>
-<button>Подвески</button>
+<div class="razdel1 colors">
+<button style="background: #52DF21;
+"></button>
+<button style="
+background: #242424;
+"></button>
+<button style="
+background: 
+#F31A1A;
+" ></button>
+<button style="
+background: 
+#0057FF;
+" ></button>
+<button style="
+background: 
+#FFFFFF;
+"></button>
+<button class="mm"> Ещё +7</button>
 </div>
 <hr>
     <div class="title2">
@@ -345,7 +364,7 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
 </div>
 <hr>
 <div class="title2">
-  <h2>Проба</h2>се</a>
+  <h2>Проба</h2><a></a>
 </div>
 <div class="razdel1">
 <button>375</button>
@@ -488,25 +507,26 @@ toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
 
   <div class="routerclick">
     <div class="routic">
-      <div class="closehead">
+      <div class="closehead1">
         <h3>Сортировка выдачи</h3>
-        <i onclick="document.querySelector('.blackk').style='display:none'" class='bx bx-x' ></i>
+      
+        <img  onclick="document.querySelector('.blackk').style='display:none'" src="./image/cil_x.png" alt="">
       </div>
       <div class="closehead">
         <span>По популярности</span>
-        <input type="radio" name="" id="">
+        <input type="radio" name="abb" id="">
       </div>
       <div class="closehead">
         <span>По новизне</span>
-        <input type="radio" name="" id="">
+        <input type="radio" name="abb" id="">
       </div>
       <div class="closehead">
         <span>По возрастанию цены</span>
-        <input type="radio" name="" id="">
+        <input type="radio" name="abb" id="">
       </div>
       <div class="closehead">
         <span>По убыванию цены</span>
-        <input type="radio" name="" id="">
+        <input type="radio" name="abb" id="">
       </div>
       <div class="twobtn">
         <button>Подробнее</button>

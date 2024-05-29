@@ -614,16 +614,34 @@ top: 2px;
     opacity: .3;
 }
 .img21{
-    position: absolute;
+    /* position: absolute;
     bottom: 0px;
     width: 18%;
-    left: 0px;
+    left: 0px; */
+
+    width:22% !important;
+/* height: 89.5px; */
+position: absolute;
+top: -7px;
+bottom: 0px;
+left: -1.77px;
+ 
+/* transform: rotate(7.02deg); */
+
 }
 .img12{
-    width: 15%;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+
+
+width: 30% !important;
+    /* width: 59.69px; */
+/* height: 36.63px; */
+position: absolute;
+bottom: 7px;
+right: -13px; 
+/* gap: 0px; */
+/* opacity: 0px; */
+transform:rotate(-35deg);
+
 }
 .frame h2{
     text-align: center;
@@ -1155,7 +1173,7 @@ border-bottom: 1px solid white;
     align-items: center;
     gap: 4px;
     }
-    .bxs-chevron-right{
+ .bxs-chevron-right{
         font-size: 15px !important;
     }
     .text_bal h1{
@@ -1329,10 +1347,10 @@ text-align: center;
         margin-top: 38px;
         margin-left: 0px;
     }
-    .bx-chevron-left{
+    .son2 .bx-chevron-left{
         font-size: 30px;
     }
-    .bx-chevron-right{
+    .son2 .bx-chevron-right{
         font-size: 30px;
     }
     .balloon{
@@ -1402,12 +1420,12 @@ margin: auto;
     .pod{
         font-size: 12px !important; 
     }
-    .img21{
+    /* .img21{
         width: 25%;
-    }
-    .img12{
+    } */
+    /* .img12{
         width: 20%;
-    }
+    } */
      
 }
 @media (max-width:380px){

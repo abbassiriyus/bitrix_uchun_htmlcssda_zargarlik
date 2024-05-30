@@ -101,7 +101,7 @@ margin: 0px;
 .navbar1{
     display: grid;
     gap: 48px;
-    grid-template-columns: 1.2fr 230px 1fr;
+    grid-template-columns: 1.2fr 230px 1.05fr;
     max-width: 1440px;
     /* margin: auto; */
     width: 95%;
@@ -110,8 +110,11 @@ margin: 0px;
 .navbar1 ul{
 display: flex;
 gap: 10px;
+padding-left: 12px;
 width: 97.3%;
 justify-content: space-between;
+position: relative;
+left: 5px;
 }
 .navbar1 ul li{
     font-family: "Montserrat", sans-serif;
@@ -138,7 +141,12 @@ padding: 10px 4px;
  /* margin-left: 14%; */
  height: 60px;
 }
-
+.navbar_but .bx-menu-alt-left{
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
 .nav1  .navbar_but{
     display: grid;
     height: 50px;
@@ -148,8 +156,8 @@ padding: 10px 4px;
     grid-template-columns: 114px 220px 2.5fr 187px  128px 170px;
     align-items: center;
     gap: 18px;
-    margin-left: 10px;
-
+    position: relative;
+    left: 6px;
 }
 
 .navbar1 .ulsp{
@@ -185,6 +193,8 @@ color: #242424;
 padding-left: 10px;
 border-radius: 10px;
 padding-right: 10px;
+width: 94%;
+margin-left: 17px;
 }
 .nav1 .navbar_but .search_inp input{
     border: none;
@@ -369,11 +379,15 @@ text-align: left;
 }
 
 
-
+.nav2 .one .ssss{
+    width: 95%;
+    margin: auto;
+    display: flex;justify-content: space-between;
+}
 .nav2 .two{
     display: flex;
     justify-content: space-between;
-    width: 94%;
+    width: 95%;
     height: 64px;
     gap: 30px;
     margin: auto;padding-top: 10px;
@@ -524,7 +538,7 @@ text-align: left;
 }
 .pagerout{
     display: flex;
-    gap: 10px;
+    gap: 7px;
     width: 97%;
      max-width: 1440px;
     height: 40px;
@@ -806,10 +820,12 @@ color: #363636;
   }
   .main_card .cards .card1 .mySwiper{
     width: 275px;
+    height: 250px;
   }
   @media(max-width:638px){
     .main_card .cards .card1 .mySwiper{
         width: 250px;
+        height: auto !important ;
       }
   }
   @media(max-width:585px){
@@ -1091,6 +1107,7 @@ color: #242424;
 }
 .footer-1 .section1{
     width: 100%;
+    margin-top: 92px;
 }
 .footer-1 .h31{
     font-family: Montserrat;
@@ -1128,6 +1145,8 @@ box-shadow: none !important;
 }
 .body_ichi .accordion-button{
 padding: 6px !important;
+position: relative;
+left: -6px;
  
     }
  

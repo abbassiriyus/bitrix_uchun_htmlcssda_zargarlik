@@ -68,7 +68,7 @@ body{
 }
 .pechat{
     background-color: #F2F2F2;
-    padding: 10px 12px;
+    padding: 10px 13px;
     border-radius: 8px;
     /* width: 90%; */
     /* margin-left: 20px; */
@@ -112,7 +112,7 @@ margin-bottom: 0px;
 .filt1{
     display: flex;
     width: 95%;
-    margin: auto;
+    /* margin: auto; */
     gap: 10px;
     padding-bottom: 10px;
     overflow: auto;overflow: auto !important;
@@ -238,7 +238,7 @@ margin-bottom: 0px !important;
     /* margin-bottom: 20px; */
     border-radius: 10px;
     transition: 1s;
-    margin-top: 10px;
+    margin-top: 2px;
     /* display: none; */
 }
 .radl h3{
@@ -372,6 +372,7 @@ text-align: left;
     font-weight: 500;
     line-height: 20px;
     text-align: left;
+    padding-left: 14px !important;
     
 }
 .razdel21 input{
@@ -612,7 +613,7 @@ top: 2px;
 .liniy{
     height: 1px;
     width: 98%;
-    margin-bottom: 30px !important;
+    margin-bottom: 45px !important;
     margin: auto;
     background-color: grey;
     opacity: .3;
@@ -673,10 +674,10 @@ transform:rotate(-35deg);
 }
 .hand{
     background: url("../image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
-    width: 98%;
+    width: 100%;
     margin: auto;
     height: 477px;
-    margin-top: 40px;
+    margin-top: 18px;
     border-radius: 10px;
     background-size:cover;
     display: flex;
@@ -777,7 +778,7 @@ border-bottom: 1px solid white;
 .main_card .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 90%;
+    width: 101%;
     /* gap: 10px; */
 }
 
@@ -1072,7 +1073,7 @@ border-bottom: 1px solid white;
     .main_card{
      margin: auto;
         max-width: 1200px;
-        width: 90%;
+        width: 100%;
     }
 }
 @media (max-width:800px){

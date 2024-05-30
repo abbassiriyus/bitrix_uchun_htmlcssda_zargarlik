@@ -695,8 +695,8 @@ top: -2px;
     width: 18%;
     left: 0px; */
 
-    width:22% !important;
-/* height: 89.5px; */
+    /* width:22% !important; */
+height: 89.5px;
 position: absolute;
 top: -7px;
 bottom: 0px;
@@ -708,12 +708,12 @@ left: -1.77px;
 .img12{
 
 
-width: 30% !important;
-    /* width: 59.69px; */
+
+    width: 89.69px;
 /* height: 36.63px; */
 position: absolute;
 bottom: 7px;
-right: -13px; 
+right: -17px; 
 /* gap: 0px; */
 /* opacity: 0px; */
 transform:rotate(-35deg);
@@ -1400,7 +1400,7 @@ border-bottom: 1px solid white;
         width: 100%;
           }
 }
-@media (max-width:400px) {
+@media (max-width:9910px) {
     .page span{
         font-size: 14px;
         margin-left: 14px;
@@ -1986,6 +1986,19 @@ text-align: left;
     line-height: 24px;
     text-align: center;
     
+}
+.alm1{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    
+}
+@media(max-width:991px){
+    .alm1{
+        display: none;
+    }
 }
 .imgcard{
     display: none;

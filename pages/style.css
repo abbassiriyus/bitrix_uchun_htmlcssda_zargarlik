@@ -1408,7 +1408,7 @@ text-align: left;
 padding: 0px;
 width: 75%;
 margin: auto; 
-    padding-top: 10px;
+    /* padding-top: 10px; */
         padding-bottom: 20px;
     }
     .footer2{
@@ -1504,42 +1504,61 @@ margin: auto;
 .footer_1{
     padding-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1.4fr 0.93fr 1fr 0.5fr;;
+
     width: 95%;
      max-width: 1440px;
     margin: auto;
 }
 .footer_1 ul{
+    padding: 0;
+    margin: 0;
     margin-bottom: 30px;
 }
 .footer_1 ul li{
  display: flex;
  align-items: center;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 11px;
     gap: 10px;
     font-weight: 500;
 }
 .footer_1 h3{
     font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    margin-top: 6px;
 }
 .footer_1 span{
     color: #257AE8;
     border-bottom: 2px dashed #257AE8;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+
 }
 .appl img{
-    width: 100%;
+    width: 124px;
     margin-bottom: 10px !important;
     margin: auto;
+    margin-top: 5px;
+margin-left: 10px;
 }
 .appl{
     display: block;
-    width: 70%;
+    width: 204px;
     border: 1px solid #757575;
-    padding: 10%;border-radius: 10px;
-    margin-top: 30px;
+    /* padding: 10%; */
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-left: 0px;
+    padding-top: 37px;padding-bottom: 10px;
+    padding-left: 30px;
+}
+.footer_1 .nomer12{
+    margin-bottom: 0px;
 }
 @media (max-width:1240px) {
     .footer_1{
@@ -1720,7 +1739,7 @@ margin: 0px !important;
     .footer2{
         display: block;
         margin: auto;
-        width: 95%;
+        width: 100%;
         margin-top: 40px;
         margin-bottom: 80px;
     }
@@ -1930,6 +1949,14 @@ text-align: left;
 .footer-1 .accordion-item, .footer2 .accordion-item{
     border-bottom: 1px solid #E6E6E6 !important
 }
+.footer-1 .accordion-button{
+    height: 48px;
+}
+.footer2{
+    margin-top: 42px !important;
+    
+}
 .footer2 .accordion-button{
     font-weight: 700;
+    height: 36px;
 }

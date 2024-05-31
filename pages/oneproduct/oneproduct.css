@@ -19,6 +19,7 @@ align-items: center;
 }
 .routpage_one .bx-chevron-right{
     font-size: 24px;
+    color: #808080;
 }
 .card_body_one{
     display: grid;

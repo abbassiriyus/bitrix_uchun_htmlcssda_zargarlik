@@ -1,0 +1,116 @@
+.routpage_one{
+    display: flex;
+    gap: 9px;
+    margin: auto;
+    margin-top: 63px;
+    padding-left: 2px;
+    width: 95%;
+    max-width: 1440px;
+align-items: center;
+}
+.routpage_one span{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #808080;
+    
+}
+.routpage_one .bx-chevron-right{
+    font-size: 24px;
+}
+.card_body_one{
+    display: grid;
+    grid-template-columns:  2fr 1.1fr;
+    width: 95%;
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 32px;
+}
+.carousel_one{
+    width: 100%;
+ 
+    min-height: 200px;
+    max-width: 930px;
+display: grid;
+grid-template-columns: 100px auto;
+gap: 10px;
+
+}
+ .payment_one{
+    min-height: 200px;
+    background-color: green;
+}
+.carousel_one .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel_one .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel_one .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .carousel_one .swiper {
+    width: 100%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel_one  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel_one .mySwiper2 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel_one .mySwiper {
+    /* height: 100%; */
+    box-sizing: border-box;
+    padding: 10px 0;
+    padding-top: 22px;
+    padding-bottom: 25px;
+ 
+  }
+    .carousel_one .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel_one .mySwiper .swiper-wrapper img{
+    width: 88px;
+    height: 88px;
+    margin-bottom: 32px;
+    border-radius: 12px !important;
+    margin-left: -13px;
+   
+  }
+
+
+  .carousel_one .mySwiper .swiper-wrapper {
+ gap: 6px;
+ background-color: #80808000;
+  }
+
+  .carousel_one .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+

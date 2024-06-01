@@ -272,3 +272,15 @@ text-align: left;
     height: 3px;
     gap: 0px;  
   }
+  .slider_one3 .card_one4 p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    
+  }
+  .slider_one3 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    position: absolute;
+    bottom: -3px;
+  }

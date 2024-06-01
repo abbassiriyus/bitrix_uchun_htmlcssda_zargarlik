@@ -247,4 +247,16 @@ margin: auto;
   }
   .slider_one2 .swiper-pagination-bullet-active {
 border-radius: 50% !important;
+background: #242424 !important;
+  }
+
+  .slider_one3 .card_one4 .swiper-slide{
+    min-height: 213px;
+  }
+  .slider_one3 .card_one4 .swiper-pagination-bullet {
+    border-radius: 0px !important;
+    transform: rotate(0deg) !important;
+    width: 50.25px;
+    height: 3px;
+    gap: 0px;  
   }

@@ -825,7 +825,21 @@ border-bottom: 1px solid white;
     align-items: center;
     gap: 10px;
 }
-.swiper-pagination-bullet-active{
+.slider_one3 .card_one4{
+    background-color: red;
+}
+.slider_one3 .card_body_one4{
+    margin-top: 2px;
+    padding-top: 1px;
+    height: 247px;
+   
+}
+.slider_one3 .card_body_one4 img{
+    padding-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+.cards .swiper-pagination-bullet-active{
     border-radius: 0px !important;
     transform: rotate(45deg) !important;
     background: #242424 !important;

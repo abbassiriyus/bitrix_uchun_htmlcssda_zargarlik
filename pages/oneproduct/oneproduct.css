@@ -649,6 +649,14 @@ opacity: 0px;
   display: flex;
   gap: 3px;
 }
+.tab_but:hover{
+  background-color: #00000046
+}
+.tab_but span:hover{
+  text-decoration: underline;
+  color: #000000;
+}
+
 .tab_but span{
   font-family: Montserrat;
 font-size: 18px;
@@ -664,6 +672,7 @@ color: #939393;
   background-color: white;
   border-radius: 12px;
   margin-top: 30px;
+  display: none;
 }
 .quesic{
   padding: 28px;
@@ -1026,3 +1035,114 @@ margin-left: 18px;
 .for-display-none-div-big2{
   display: none;
 }
+/* .card_one4{
+  position: relative;
+} */
+/* .for-display-none-div-big{
+  position: absolute;
+  bottom: -207px;
+  left: 0px;
+  z-index: 344233 !important;
+
+}
+.for-display-none-div-big1{
+  position: absolute;
+  bottom: -207px;
+  left: 0px;
+}
+.for-display-none-div-big2{
+  position: absolute;
+  bottom: -207px;
+  left: 0px;
+} */
+.kuryer h1{
+  font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+}
+.kuryer{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: none;
+}
+.kod{
+  margin-top: 25px;
+}
+.kod span{
+  font-family: Montserrat;
+  font-size: 16px;
+margin-top: -4px;
+
+  font-weight: 400;
+  line-height: 2;
+  text-align: left;
+  
+}
+.kuryer button{
+  width: 197px;
+  height: 58px;
+  border-radius: 14px;
+  background: #FFF957;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #242424;
+  border: none;
+  margin-top: 30px;  
+}
+
+.kuryer1{
+  margin-top: 24px;
+  display: none;
+}
+
+.kod1 h1{
+  font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+}
+.kontrol{
+  margin-top: 24px;
+}
+.kontrol span{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32.5px;
+  text-align: left;
+}
+.birku{
+  line-height: 0 !important;
+  margin-top: 10px;
+  position: relative;
+  top: 0px;
+}
+.zakon{
+  position: relative;
+  top: 5px;
+}
+
+.kuryer2{
+  margin-top: 24px;
+  display: none;
+}
+.kuryer2 h1{
+  font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+}
+.kod2{
+  margin-top: 24px;
+}
+.yesli{
+  position: relative;
+    top: 16px;
+    display: flex;
+    gap: 7px;
+}
+ 

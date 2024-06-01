@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../style1.css">
     <link rel="stylesheet" href="./oneproduct.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+  <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -458,7 +458,7 @@
                   <div class="number">12</div>
                 </div><span>Избранное</span>
               </li>
-              <li class="iconlink">
+              <li onclick="document.querySelector('.modall').style='display:flex'" class="iconlink">
                 <div class="icons"><img src="../../image/icon_basket 1.svg" alt="">
                   <div class="number">12</div>
                 </div> <span>Корзина</span>
@@ -1106,16 +1106,16 @@
 
       <div class="guarantee">
           <div class="guarbtns">
-              <div class="tab_but">
+              <div onclick="tovbtn()" class="tab_but">
                   <span>Оплата товара</span>
               </div>
-              <div class="tab_but">
+              <div onclick="tovbtn1()" class="tab_but">
                   <span>Наши гарантии</span>
               </div>
-              <div class="tab_but">
+              <div  onclick="tovbtn2()" class="tab_but">
                   <span>Доставка товара</span>
               </div>
-              <div class="tab_but">
+              <div  onclick="tovbtn3()" class="tab_but">
                   <span>Вопрос по товару</span>
               </div>
           </div>
@@ -1148,6 +1148,43 @@
                       </div>
               </div>
           </div>
+<div class="kuryer">
+  <h1>Оплата товара</h1>
+  <div class="kod">
+    <span>Оплата при получении курьеру наличными после осмотра и проверки комплектности.
+    </span><br>
+    <span>Также возможна оплата картой на сайте, QR-кодом, а также оплата по счёту.
+    </span><br>
+    <span>Если Ваш заказ менее 4000 руб., то необходимо скорректировать заказ до 4000 руб., чтобы оплата была при получении, либо оплатить 400 руб. за доставку.</span>
+  </div>
+  <button>Подробнее</button>
+</div>
+<div class="kuryer1">
+  <div class="kod1">
+    <h1>Наши гарантии</h1>
+    <div class="kontrol">
+      <span>Ювелирное украшение перед отправкой проходит 3-х уровневый контроль качества в отделе ОТК.
+      </span><br>
+      <span>На украшения с драгоценными камнями – обязательно идет сертификат подтверждающее от производителя качество камня
+      </span><br>
+      <span class="birku" >Каждое украшение имеет БИРКУ- паспорт изделия, содержащий всю необходимую для потребителя информацию. Перечень реквизитов на ярлыке регламентируется Отраслевым стандартом (ОСТ 117-3-002-95). Также на бирке обязательно указываются: описание вставки (её наименование и материал), размер (кольца, браслета, цепочки) и длина (для цепей и браслетов).
+      </span><br>
+      <span class="zakon">На украшения обязательно по закону предоставляется ГАРАНТИЯ 6 месяцев с даты получения заказа, на часы – 3 года</span>
+    </div>
+  </div>
+</div>
+<div class="kuryer2">
+  <h1>Доставка товара</h1>
+  <div class="kod2">
+    <span>Более 8 500 пунктов выдачи по всей России, а также СНГ
+    </span><br>
+    <span style="position: relative;
+    top: 8px;">Оформить заказ вы можете домой или на работу. Кроме того, ваш заказ может быть доставлен в любой из пунктов выдачи заказов рядом с вами, где вы сможете забрать заказ в удобное время
+    </span><br>
+    <span class="yesli" >Если не нашли информацию самостоятельно позвоните нам +73432664070 (звонок бесплатный) или  <p>+73436843499</p></span>
+  </div>
+</div>
+
       </div>
 
    
@@ -1221,6 +1258,144 @@
             </div>
         </div>
     </main>
+    <div class="modall">
+      <div class="white">
+        <div class="white_ic">
+          <div class="tovarr">
+           <div class="carttov">
+            <h2>Товар добавлен в корзину</h2>
+            <div class="hrf">
+             <span>Товар добавлен в корзину</span>
+              <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+            </div>
+           </div>
+           <div class="plusminus">
+            <div class="imageu">
+<img src="./image/5-2964-103-1Б 1.png" alt="">
+            </div>
+            <div class="titleimg">
+             <div class="cen">
+              <h3>Кольцо 5-1182-103-1Б Au 585</h3>
+              <p>Размер: 16.5</p>
+             </div>
+            </div>
+
+            <div class="gap"></div>
+
+
+            <div class="plmin">
+              <div class="btnplu">
+                <div class="min"><p>-</p></div>
+                <span>1</span>
+                <div class="min"><p>+</p></div>
+              </div>
+
+            </div>
+            <div class="pricc">
+              <div class="delp">
+              <h3>33 095 ₽</h3>
+                <del>77 862 ₽</del>
+              </div>
+            </div>
+           </div>
+
+           <div class="rekom">
+            <h2>Рекомендации для вас</h2>
+
+            <div class="uzucard">
+              <div class="carduz">
+               <div class="ringimg">
+                <img src="./image/5-2964-103-1Б 1 (1).png" alt="">
+               </div>
+                <div class="ringtex">
+                  <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                  <h2>108 590 ₽ / шт  </h2>
+                  <del>158 680 ₽</del>
+                </div>
+              </div>
+
+              <div class="carduz">
+                <div class="ringimg">
+                 <img src="./image/5-2964-103-1Б 1 (2).png" alt="">
+                </div>
+                 <div class="ringtex">
+                   <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                   <h2>108 590 ₽ / шт  </h2>
+                   <del>158 680 ₽</del>
+                 </div>
+               </div>
+
+
+               <div class="carduz">
+                <div class="ringimg">
+                 <img src="./image/5-2964-103-1Б 1 (3).png" alt="">
+                </div>
+                 <div class="ringtex">
+                   <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                   <h2>108 590 ₽ / шт  </h2>
+                   <del>158 680 ₽</del>
+                 </div>
+               </div>
+              
+            </div>
+           
+           </div>
+          </div>
+        </div>
+         <div class="oformit">
+         <div class="pokupka">
+          <button onclick="document.querySelector('.modal22').style='display:block'
+          document.querySelector('.white').style='display:none'
+          " class="grey"> Продолжить покупки</button>
+          <button onclick="document.querySelector('.modal22').style='display:block'
+          document.querySelector('.white').style='display:none'
+          "  class="yellow">Оформить заказ</button>
+         </div>
+            </div>
+      </div>
+
+      <div class="modal22">
+      <div class="modal2_ic">
+        <div class="carttov1">
+          <h2>Заказ в один клик</h2>
+          <div class="hrf">
+            <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+          </div>
+         </div>
+         <div class="oplata">
+          <div class="oplimg">
+            <img src="./image/5-2964-103-1Б 1 (4).png" alt="">
+          </div>
+          <div class="opltext">
+            <div class="ic">
+              <h2>Кольцо 5-1182-103-1Б Au 585</h2>
+              <span>Размер: 16.5</span>
+            </div>
+          </div>
+          <div class="oplprice">
+            <div class="pric">
+              <h2>13 597  ₽</h2>
+              <p>Итого л оплате  13 597</p>
+            </div>
+          </div>
+         </div>
+
+
+
+
+         <div class="e-mail">
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Ваш e-mail">
+          <input type="text" placeholder="+7">
+          <input type="text" placeholder="Доставка">
+         </div>
+        
+      </div>
+      <div class="kupit">
+          <button>Купит</button>
+      </div>
+      </div>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
@@ -1247,7 +1422,7 @@
   </script>
 
 
-
+<script src="oneproduct.js"></script>
 <script>
   var swiper = new Swiper(".mySwiper5", {
    pagination: {

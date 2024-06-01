@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23981.03108646092!2d69.25419109999999!3d41.2911041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5f1f3347f27%3A0x9a5455de3245cf1f!2z0KjQutC-0LvQsCDihJYyODI!5e0!3m2!1sru!2s!4v1717239365740!5m2!1sru!2s&markers=icon:https://www.svgrepo.com/show/12211/placeholder.svg%7C41.310,-69.250&markers=icon:https://www.svgrepo.com/show/12211/placeholder.svg%7C41.320,-69.240&markers=icon:https://www.svgrepo.com/show/12211/placeholder.svg%7C41.330,-69.230&markers=icon:https://www.svgrepo.com/show/12211/placeholder.svg%7C41.340,-69.220"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  
+  <script>
+    const iframe = document.querySelector('iframe');
+    const map = iframe.contentWindow.google.maps;
+    const markers = [];
+  
+    function initMap() {
+      const markerPositions = [
+        { lat: 41.310, lng: -69.250 },
+        { lat: 41.320, lng: -69.240 },
+        { lat: 41.330, lng: -69.230 },
+        { lat: 41.340, lng: -69.220 }
+      ];
+  
+      markerPositions.forEach((position) => {
+        const marker = new map.Marker({
+          position,
+          map: iframe.contentWindow.map,
+          icon: 'https://www.svgrepo.com/show/12211/placeholder.svg'
+        });
+  
+        marker.addListener('click', () => {
+          marker.setIcon('https://www.svgrepo.com/show/12211/placeholder-2.svg');
+        });
+  
+        markers.push(marker);
+      });
+    }
+
+  initMap()
+    iframe.addEventListener('load', initMap);
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,168 @@
+.map_body{
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 55px;
+
+}
+.map_body h2{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34.13px;
+    text-align: left;
+    
+}
+.iframe_map{
+    display: grid;
+    grid-template-columns: 512px auto;
+    border: 1px solid rgba(0, 0, 0, 0.348);
+    border-radius: 19px;
+    height: 762px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.iframe_map iframe{
+    width: 100%;
+    height: 762px;
+}
+.iframe_scroll{
+    width: 100%;
+    height: 762px;
+  
+    overflow: auto;
+    position: relative;
+}
+.scrollic{
+    padding: 25px;
+}
+.inp_mes{
+    width: 90%;
+    height: 66px;
+    /* padding-left: 15px; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #F5F5F5;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.inp_mes input{
+    border: none;
+    background-color: #F5F5F5;
+    outline: none;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+text-align: left;
+color: #6A6A6A;
+width: 90%;
+}
+.inp_mes .bx-search{
+    font-size: 25px;
+}
+.filt0{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+.pop{
+    display: flex;
+    
+gap: 10px;
+}
+.pop1{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.pop .bx-slider-alt{
+    font-size: 20px;
+}
+.pop span ,.pop1 span{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #242424;
+}
+.flagm{
+    margin-top: 31px;
+    margin-left: -3px;
+}
+.magal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.magal h3{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #242424;
+}
+.flagm h4{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #242424;
+margin-top: 21px;
+}
+.flagm p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #242424;
+margin-top: 6px;
+margin-bottom: 7px;
+}
+.flagm span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+color: #898989;
+}
+.lombard{
+    display: flex;
+    gap: 19px;
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+    margin-left: 5px;
+}
+.lombard button{
+    border-radius: 100px;
+    background: #F5F5F5;
+border: none;
+    padding: 10px 16px 10px 16px;
+}
+.flagm hr{
+    color: rgba(128, 128, 128, 0.179) !important;
+    opacity: 0.4;
+    margin-top: 31px;
+}
+.footer_1{
+    padding-top: 46px !important;
+}
+.footer_1 {
+    padding-top: 115px;
+    display: grid;
+    grid-template-columns: 1.4fr 1.5fr 0.93fr 1fr 0.5fr !important;
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+}

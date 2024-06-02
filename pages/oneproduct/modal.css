@@ -9,6 +9,8 @@
     justify-content: center;
     z-index: 12212;
     align-items: center;
+    display: none;
+
 }
 .white{
     width: 90%;
@@ -16,7 +18,6 @@
     border-radius: 10px;
     height:734px ;
     background-color: white;
-    /* display: none; */
 }
 .white_ic{
     padding: 30px;

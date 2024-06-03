@@ -140,13 +140,16 @@ background: #F1F1F1;
 display: flex;
 justify-content: center;
 align-items: center;
+line-height: 0px;
 border-radius: 8px;
-opacity: 0px;
 
 }
 .min p{
 font-size:35px;
-
+/* line-height: 0px; */
+background-color: red;
+padding: 0px;
+margin: 0px;
 }
 .min:hover{
     background-color: #242424;
@@ -221,9 +224,26 @@ color: #000000;
 .carduz:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
 .ringtex{
     padding:15px;
+    position: relative;
 }
+.ringimg{
+    position: relative;
+}
+.ringimg .bx-heart{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    font-size: 23px;
+    border: 1px solid #ECECEC;
+    color: #C1C1C1;
+    padding: 3px;
+    z-index: 123;
+    font-weight: 100 !important;
+
+} 
 .ringtex span{
     font-family: Montserrat;
 font-size: 18px;

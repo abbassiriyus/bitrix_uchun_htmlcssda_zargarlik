@@ -109,6 +109,7 @@ color: #242424;
 .flagm{
     margin-top: 31px;
     margin-left: -3px;
+    cursor: pointer;
 }
 .magal{
     display: flex;
@@ -231,4 +232,59 @@ border: none;
         overflow: auto;
      
     }
+}
+.sojida{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    gap: 17px;
+    margin-bottom: 2px;
+}
+/* .iframe_scroll{
+    display: none;
+} */
+.clcikker{
+    overflow: auto;
+    display: none;
+}
+.clickic{
+    padding: 30px;
+}
+.back{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.back span{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #2424248A;
+cursor: pointer;
+}
+.back .bx-arrow-back{
+    font-size: 24px;
+    color: #2424248A;
+
+}
+.dobr{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+.dobr button{
+    padding: 16px;
+    color: #2E8AE6;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    border-radius: 8px;
+    background: #2E8AE633;
+    border: none;
+  
 }

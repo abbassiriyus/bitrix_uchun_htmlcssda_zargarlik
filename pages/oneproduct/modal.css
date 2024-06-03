@@ -147,9 +147,12 @@ cursor: pointer;
 .min p{
 font-size:35px;
 /* line-height: 0px; */
-background-color: red;
+
 padding: 0px;
 margin: 0px;
+}
+.min p .bx-minus{
+    font-size: 30px;
 }
 .min:hover{
     background-color: #242424;

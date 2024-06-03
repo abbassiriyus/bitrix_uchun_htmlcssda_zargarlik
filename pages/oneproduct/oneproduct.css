@@ -656,6 +656,8 @@ opacity: 0px;
 .tab_but span:hover{
   text-decoration: underline;
   color: #000000;
+  cursor: pointer;
+
 }
 
 .tab_but span{
@@ -948,7 +950,9 @@ margin-left: 18px;
   margin-bottom: 0px;
   margin-left: 16px;  
 }
-.slider_one3 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+
+
+.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
   position: absolute;
   bottom: -9px;
 }

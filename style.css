@@ -7,9 +7,9 @@ margin: 0;
 body{
     padding-top: 150px;
 }
-a {
-    text-decoration: none;
-    color: #242424 ;
+.hovg a{
+    text-decoration: none !important;
+    color: #242424 !important;
 }
 .navbasrr{
     position: fixed;

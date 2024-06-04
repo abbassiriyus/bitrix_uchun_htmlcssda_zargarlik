@@ -405,8 +405,7 @@ font-weight: 600;
 line-height: 20px;
 text-align: left;
 color: #F32B2A;
-display: flex;
-align-items: center;
+ 
 gap: 10px;
 }
 .skidok h1 del{

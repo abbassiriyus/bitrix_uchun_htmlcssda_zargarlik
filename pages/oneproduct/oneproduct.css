@@ -890,6 +890,17 @@ font-size: 30px !important;
 border-radius: 50%;
 
 }
+.slider_one3 .swiper-button-prev {
+  background-color: white !important;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px !important;
+  border-radius: 50%;
+  
+  }
 .slider_one3 .swiper-button-next:after, .slider_one3 .swiper-button-prev:after{
 font-size: 23px;
 }

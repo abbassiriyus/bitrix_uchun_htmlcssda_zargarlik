@@ -1207,3 +1207,13 @@ line-height: 34.13px;
   border-radius: 50%;
   color: #000000 !important;
 } */
+
+.mySwiper4 .swiper-button-next, .mySwiper4 .swiper-button-prev{
+  /* background-color: red; */
+
+  color: #242424 !important;
+}
+.mySwiper4 .swiper-button-next:after, .mySwiper4 .swiper-button-prev:after{
+  font-size: 15px !important;
+  font-weight: 700;
+}

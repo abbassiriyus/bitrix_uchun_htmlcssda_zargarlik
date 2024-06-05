@@ -112,7 +112,7 @@ color: #242424;
 
 }
 
-.mySwiper7 .swiper-horizontal .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.mySwiper7 .swiper-horizontal  .swiper-pagination-bullets, .mySwiper7 .swiper-pagination-bullets.swiper-pagination-horizontal, .mySwiper7  .swiper-pagination-custom, .mySwiper7  .swiper-pagination-fraction {
     width: 15% !important;
     position: absolute;
     bottom: 30px;

@@ -33,10 +33,11 @@
 .rosp span{
     font-family: Montserrat;
 font-size: 18px;
-font-weight: 400;
+font-weight: 500;
 line-height: 21.94px;
 text-align: center;
 color: #242424;
+text-decoration: underline;
 }
 .kulon{
     margin-top: 20px;
@@ -443,12 +444,6 @@ text-align: start !important;
     justify-content: center;
     align-items: center;
 }
-.novin{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-   
-}
 .novv span{
     font-family: Jost;
     font-size: 16px;
@@ -456,6 +451,13 @@ text-align: start !important;
     line-height: 20px;
     
 }
+.novin{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+   
+}
+
 .now{
     width: 55px;
 height: 20px;
@@ -507,4 +509,144 @@ font-weight: 400;
 line-height: 22px;
 text-align: left;
 text-decoration: underline;
+}
+.mySwiper0 .swiper-button-next, .swiper-button-prev{
+    /* background-color: red; */
+  
+    color: #242424 !important;
+}
+.mySwiper0 .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 15px !important;
+    font-weight: 700;
+}
+.novin1{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+   display: flex;
+flex-direction: column;
+align-items: end;
+}
+
+.novv1{
+    /* width: 102px; */
+    height: 20px;
+    border-radius: 2px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAD244;
+}
+.novv{
+    width: 72px;
+    height: 20px;
+    border-radius: 2px;
+    background: #62C752;
+    color: white;
+    padding: 0px 5px 0px 5px;
+  
+}
+.novv1 span{
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    
+}
+.sale0{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: #FFF957;
+    height: 302px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 62px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.sale0_textt h1{
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #242424;    
+}
+.sale0_textt{
+    padding-left: 21%;
+    margin-top: -10px;
+}
+.raw{
+    box-shadow: 0px 5px 20px 0px #999537;
+    width: 485px;
+    height: 50px;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto 50px;
+    align-items: center;
+    position: relative;
+    top: 11px;
+}
+.raw input{
+    width: 90%;
+    margin: auto;
+    border: none;
+    outline: none;
+    background-color: #24242400;
+}
+.raw_img{
+    margin-left: -62px;
+}
+.line_guarantee{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    height: 2px ;
+    background-color: rgba(0, 0, 0, 0.412);
+    margin-top: 88px;
+}
+.line_guarantee h2{
+    text-align: center;
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.26px;
+background-color: white;
+margin-top: -10px;
+width: 395px;
+margin: auto;
+position: relative;
+top: -13px;
+}
+.udobn{
+    display: grid;
+    grid-template-columns: 340px 340px 340px 340px;
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 90px;
+    gap: 25px;
+}
+.rinic img{
+    margin-bottom: -9px;
+}
+.rinic span{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.26px;
+text-align: center;
+color: #242424;
+}
+.rink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FFF957;
+    height: 230px;
+    border-radius: 16px;
 }

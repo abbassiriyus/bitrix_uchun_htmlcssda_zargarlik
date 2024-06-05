@@ -47,6 +47,7 @@ font-size: 12px;
 font-weight: 600;
 line-height: 14.63px;
 text-align: left;
+text-decoration: none !important;
 
 }
 .hrf .bx-x{
@@ -132,6 +133,8 @@ top: -4px;
     display: flex;
     justify-content: center;
     align-items: center;
+text-decoration: none !important;
+
 }
 .min{
     width:44px;
@@ -254,7 +257,7 @@ font-weight: 400;
 line-height: 21.94px;
 text-align: left;
 color: #363636;
-
+text-decoration: none !important;
 }
 .ringtex h2{
     font-family: Montserrat;
@@ -389,6 +392,8 @@ text-align: left;
 .ic span{
     position: relative;
     top: 7px;
+text-decoration: none !important;
+
 }
 .ic h2{
     font-family: Montserrat;

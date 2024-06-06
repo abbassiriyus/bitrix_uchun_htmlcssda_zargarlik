@@ -47,7 +47,7 @@ font-size: 12px;
 font-weight: 600;
 line-height: 14.63px;
 text-align: left;
-text-decoration: none !important;
+text-decoration: underline;
 
 }
 .hrf .bx-x{
@@ -137,8 +137,8 @@ text-decoration: none !important;
 
 }
 .min{
-    width:44px;
-height:44px;
+    width:44px !important;
+height:44px !important;
 background: #F1F1F1;
 display: flex;
 justify-content: center;

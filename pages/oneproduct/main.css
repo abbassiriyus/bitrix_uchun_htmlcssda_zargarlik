@@ -413,7 +413,13 @@ overflow: hidden;
     filter: grayscale(0%);
     transform: rotateY(180deg) rotateZ(5deg);
     transition: 1s;
-
+} 
+.skupk .kredit:hover #img6{
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+    /* animation-delay:; */
+    animation-iteration-count: 1;
 }
 .skupk .kredit3 #img4{
 height: 50%;
@@ -426,12 +432,37 @@ border-radius: 20px;
 transition: 1s;
 }
 .skupk .kredit #img6{
-background-color: #62C752;
 width: 200px;
 z-index: 123;
 position: absolute;
 right: -100px;
-top: 100px;
+top: -160px;
+transform: rotate(45deg);
+
+}
+
+@keyframes animation{
+    0%{
+        width: 200px;
+        z-index: 123;
+        position: absolute;
+        left: 300px;
+        top: -160px;
+        transform: rotate(0deg);  
+    }
+    70%{
+        width: 200px;
+        z-index: 123;
+        position: absolute;
+        left:35px;
+        top: -45px;
+    }
+    100%{
+        position: absolute;
+        left:33px;
+        top: -48px;
+        transform: rotate(145deg);  
+    }
 }
 
 .skupk .kredit3:hover #img5{
@@ -449,7 +480,7 @@ top: 100px;
     bottom: 20px;
     left: 20%;
     z-index: 0;
-    transform: rotate(5deg);
+    transform: rotate(-15deg);
     border-radius: 20px;
     }
     
@@ -459,8 +490,9 @@ top: 100px;
         bottom: 20px;
         left: 20%;
         z-index: 0;
-        transform: rotate(-5deg);
+        transform: rotate(0deg);
         border-radius: 20px;
+        transition: 1s;
      }
 
      .kredit h1{

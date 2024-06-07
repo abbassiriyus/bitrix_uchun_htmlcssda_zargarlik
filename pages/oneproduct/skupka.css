@@ -1,0 +1,41 @@
+.big_boddy{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 55px;
+}
+.pravila_dg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dom_arr_skup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top:15px;
+    margin-bottom: 34px;
+}
+.dom_arr_skup .bx-home-alt{
+    font-size: 20px;
+}
+.dom_arr_skup .bx-chevron-right{
+    font-size: 20px;
+}
+.dom_arr_skup h4{
+    font-size: 14px;
+}
+.domik_dg{
+    /* margin-left: 10px; */
+    background-color: red;
+}
+.app_dg{
+    background-color: aqua;
+}
+.domik_dg h2{
+    font-family: Montserrat;
+font-size: 34px;
+font-weight: 600;
+line-height: 41.45px;
+text-align: left;
+
+}

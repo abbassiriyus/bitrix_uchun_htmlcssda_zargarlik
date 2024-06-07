@@ -5,6 +5,9 @@
     margin-top: 55px;
 
 }
+body{
+    position: relative;
+}
 .map_body h2{
     font-family: Montserrat;
     font-size: 28px;
@@ -287,4 +290,97 @@ cursor: pointer;
     background: #2E8AE633;
     border: none;
   
+}
+.back_blackc{
+    background-color: #242424;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.mySwiper2 .swiper-button-next ,.mySwiper2 .swiper-button-prev{
+    background-color: white !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-color: black;
+}
+.back_blackc .bx-x{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.back_blwh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 9999999;
+    display: none;
+}
+.blwhite{
+    max-width: 390px;
+    width: 100%;
+    height: 623px;
+    border-radius: 14px;
+    background-color: white;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+.blwhitic{
+    padding: 25px;
+}
+.kak{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-bottom: 30px;
+}
+.kak .bx-x{
+    font-size: 25px;
+    cursor: pointer;
+}
+.kak h2{
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.82px;
+text-align: left;
+}
+.blwhite h6{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+margin-bottom: -5px;
+/* margin-bottom: 30px; */
+}
+.blwhite img{
+    margin-top: 40px;
+}
+.blwhitic button{
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background: #2E8AE633;
+    margin-top: 33px;
+    border: none;
+    color: #2E8AE6;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+
 }

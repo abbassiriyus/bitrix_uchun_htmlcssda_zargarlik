@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../../style1.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   
@@ -634,10 +635,10 @@ document.querySelector('.clcikker').style='display:block'
         <p>г. Екатеринбург, ул. 8 Марта, д.46 ,</p>
       <span>пн-вс10:00 - 22:00</span>
       <div class="sojida">
-      <img src="./image/Frame 768 (1).png" alt="">
-      <img src="./image/Frame 769.png" alt="">
-      <img src="./image/Frame 770.png" alt="">
-      <img src="./image/Frame 771 (2).png" alt="">
+      <img onclick="document.querySelector('.back_blackc').style='display:block'" src="./image/Frame 768 (1).png" alt="">
+      <img onclick="document.querySelector('.back_blackc').style='display:block'" src="./image/Frame 769.png" alt="">
+      <img onclick="document.querySelector('.back_blackc').style='display:block'" src="./image/Frame 770.png" alt="">
+      <img onclick="document.querySelector('.back_blackc').style='display:block'" src="./image/Frame 771 (2).png" alt="">
       </div>
       <div class="lombard">
         <button>Ломбард</button>
@@ -645,8 +646,8 @@ document.querySelector('.clcikker').style='display:block'
         <button>Розничная продажа</button>
       </div>
       <div class="dobr">
-        <button>Как добраться</button>
-        <button>Построить маршрут</button>
+        <button  onclick="document.querySelector('.back_blwh').style='display:flex'">Как добраться</button>
+        <button >Построить маршрут</button>
       </div>
       <hr>
       </div>
@@ -983,5 +984,176 @@ document.querySelector('.clcikker').style='display:block'
     </div>
     </div>
   </div>
+
+
+
+
+<style>
+      .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 672px !important;
+      width: 100%;
+    }
+.mySwiper2 .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  max-width:1440px;
+}
+    .mySwiper {
+      height: 38%;
+      box-sizing: border-box;
+      padding: 10px 0;
+      width:40% !important;
+      margin: auto;
+      justify-content: space-between !important;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 175px !important;
+      height: 175px !important;
+      opacity: 1 !important;
+    }
+    .mySwiper .swiper-slide img{
+      height: 100%;
+      width: 100%;
+      border-radius:10px;
+    }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+      border: 3px solid white !important;
+      border-radius: 10px;
+    }
+ 
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+    
+    .swiper {
+      width: 95%;
+      /* max-width: 1440px; */
+      /* height: 775px; */
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #/fff; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+</style>
+<div class="back_blackc">
+  <i onclick="document.querySelector('.back_blackc').style='display:none'" class='bx bx-x'></i>
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff " class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://avatars.mds.yandex.net/get-altay/10111752/2a0000018d1bb89c40eed12ce000131007a2/L_height" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../oneproduct/image/Снимок экрана 2024-06-07 161526.png" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      
+    
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div> 
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div  class="swiper-slide">
+        <img src="https://avatars.mds.yandex.net/get-altay/10111752/2a0000018d1bb89c40eed12ce000131007a2/L_height" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../oneproduct/image/Снимок экрана 2024-06-07 161526.png" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="back_blwh">
+  <div class="blwhite">
+    <div class="blwhitic">
+      <div class="kak">
+        <h2>Как добраться</h2>
+        <i onclick="document.querySelector('.back_blwh').style='display:none'" class="bx bx-x"></i>
+
+      </div>
+      
+      <h6>На общественном транспорте: <br>
+        м. Пражская, автобусы № 852, м96, м97,<br> с908, с941, с960, с970, с997; маршрутные такси № 609, Автопассаж – Пражская.
+        </h6><br>
+        <h6>В торговом центре: <br>
+          южная галерея, 3 этаж, рядом с <br> магазином Feliksov и кафе Мята Lounge.
+          </h6>
+          <img src="../oneproduct/image/image 36.png" alt="">
+          <button>Построить маршрут</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
 </body>
 </html>
